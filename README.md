@@ -1,9 +1,13 @@
-Full Stack Curse
-
-
-                                        **ANGULAR PROJECT**
+**Full Stack Curse</br></br></br>** 
 
 
 
+ <p style="color: red"><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspANGULAR PROJECT</b></p>          
+ 
+                                            
+                                            
+                                         
 
-                                            _Show Shop_ 
+
+
+                                          Show Shop
