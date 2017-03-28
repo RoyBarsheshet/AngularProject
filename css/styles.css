@@ -111,27 +111,28 @@ html {
     cursor: pointer;
     font-size: 20px;
     transition: all .2s ease-in-out;
+    color: rgb(212, 172, 113);
 }
 .About:hover{
     font-weight: bold;
     cursor: pointer;
     font-size: 20px;
     transition: all .2s ease-in-out;
+    color: rgb(212, 172, 113);
 }
 .Contact:hover{
     font-weight: bold;
     cursor: pointer;
     font-size: 20px;
     transition: all .2s ease-in-out;
+    color: rgb(212, 172, 113);
 }
 a{
     width: 100%;
 }
 .Rectangle_1 {
     background-color: rgb(0, 0, 0);
-    position: absolute;
-    left: -13px;
-    top: -3px;
+    position: fixed;
     width: 100%;
     height: 52px;
     z-index: 127;
@@ -140,18 +141,15 @@ a{
 
 /******************************slider******************/
 .Group_2 {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 480px;
-    z-index: 120;
+    height: 500px;
+    background-size: cover;
+    background-position: bottom left;
 }
 .Ellipse_3_copy_2 {
     border-radius: 50%;
-    background-color: rgb(244, 241, 237);
+    background-color: #f7f0f0;
     position: absolute;
-    left: 725px;
+    left: 906px;
     top: 456px;
     width: 20px;
     height: 18px;
@@ -161,7 +159,7 @@ a{
     border-radius: 50%;
     background-color: rgb(244, 241, 237);
     position: absolute;
-    left: 688px;
+    left: 969px;
     top: 456px;
     width: 20px;
     height: 18px;
@@ -171,31 +169,29 @@ a{
     border-radius: 50%;
     background-color: rgb(244, 241, 237);
     position: absolute;
-    left: 651px;
+    left: 938px;
     top: 456px;
     width: 20px;
     height: 18px;
     z-index: 121;
 }
 .Ellipse_3:hover {
-    background-color: rgb(201, 206, 206);
+    background-color: #ed1c24;
     cursor: pointer;
 }
 .Ellipse_3_copy:hover {
-    background-color: rgb(201, 206, 206);
+    background-color:#ed1c24;
     cursor: pointer;
 }
 .Ellipse_3_copy_2:hover {
-    background-color: rgb(201, 206, 206);
+    background-color: #ed1c24;
     cursor: pointer;
 }
 .Rectangle_2 {
     /*background-color: rgb(216, 216, 216);*/
     position: absolute;
-    left: -10px;
-    top: 47px;
+    top: 49px;
     width: 100%;
-    height: 480px;
     z-index: 115;
 }
 .Big_Title_Here_Lorem_ipsum_dolor_sit_amet__cons {
@@ -204,7 +200,7 @@ a{
     color: rgb(0, 0, 0);
     line-height: 1.375;
     position: absolute;
-    left: 714.378px;
+    left: 970px;
     top: 92.45px;
     width: 566px;
     height: 174px;
@@ -222,7 +218,7 @@ a{
     border-radius: 4px;
     background-color: rgb(237, 28, 36);
     position: absolute;
-    left: 716px;
+    left: 970px;
     top: 284px;
     width: 150px;
     height: 49px;
@@ -235,7 +231,7 @@ a{
     color: rgb(255, 255, 255);
     line-height: 1.714;
     position: absolute;
-    left: 735.232px;
+    left: 986px;
     top: 298.002px;
     z-index: 120;
     font-weight: bold;
@@ -253,7 +249,7 @@ a{
     border-style: solid;
     background-color: rgb(233, 233, 233);
     position: absolute;
-    left: 945px;
+    right: 115px;
     top: 666px;
     width: 245px;
     height: 49px;
@@ -270,7 +266,9 @@ a{
     border: 1px solid;
     outline: rgb(0, 0, 0);
 }
-
+.Rectangle_4_copy::-webkit-input-placeholder {
+    color: black;
+}
 /**********************categorais*********************/
 .categories_box {
     position: absolute;
@@ -398,21 +396,21 @@ a{
 }
 .categorays-type {
     position:absolute;
-    left:946px;
+    right: 150px;
     top:817px;
     width:233px;
     height:147px;
-    z-index: inherit;
+    z-index: 25;
 }
 .unopen-cattegorys,.unopen-cattegorys1,.unopen-cattegorys2,.unopen-cattegorys3{
     position:absolute;
-    left:1182px;
-    top:821px;
-    width:18px;
-    height:18px;
-    z-index: inherit;
+    right: 123px;
+    top: 821px;
+    width: 18px;
+    height: 18px;
+    z-index: 25;
     cursor: pointer;
-    content: url('../images/unopen_cattegorys.gif');
+    content: url(../images/unopen_cattegorys.gif);
 }
 .unopen-cattegorys1{
     top:850px;
@@ -427,11 +425,11 @@ input:checked{
     content: url('../images/opend_cattgory.gif');
     cursor: pointer;
     position:absolute;
-    left:1182px;
+    right: 123px;
     top:821px;
     width:18px;
     height:18px;
-    z-index: inherit;
+    z-index: 25;
 }
 .unopen-cattegorys1:checked{
     top:850px;
@@ -445,11 +443,11 @@ input:checked{
 .Layer_6 {
     background-image: url("../images/cattegory_hr.png");
     position: absolute;
-    left: 945px;
     top: 800px;
-    width: 295px;
+    width: 267px;
     height: 1px;
     z-index: 23;
+    right: 116px;
 }
 .CATEGORIES {
     font-size: 18px;
@@ -466,7 +464,7 @@ input:checked{
     border-style: solid;
     background-color: rgb(233, 233, 233);
     position: absolute;
-    left: 945px;
+    right: 115px;
     top: 750px;
     width: 245px;
     height: 212px;
