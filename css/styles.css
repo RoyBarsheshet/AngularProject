@@ -1,37 +1,32 @@
 @charset "utf-8";
-body {
-    margin:0;
-    padding:0;
-    width:100%;
-}
-html {
+html body {
     padding:0;
     margin:0;
+    width: 100%;
+    height: 100%;
 }
 .body_resize {
-    margin:0 auto;
     padding:0 20px 0 20px;
     width:892px;
     background:#fff;
+    min-height:100%;
+
 }
-.body {
-    margin:0;
-    padding:0;
-}
+
 .GRID {
     position: absolute;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     width: 100%;
-    height: 2416px;
+    min-height:100%;
     z-index: 138;
 }
 .Layer_109_copy {
-    background-image: url("/images/Layer_10_ copy.png");
+    /*background-image: url("/images/Layer_10_ copy.png");*/
     opacity: 0.471;
     position: absolute;
     left: 85px;
-    top: 0px;
+    top: 0;
     width: 100%;
     height: 2416px;
     z-index: 137;
@@ -39,70 +34,70 @@ html {
 
 .Sub_Nav {
     position: absolute;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 2416px;
     z-index: 134;
 }
 .Contact {
     font-size: 18px;
-    font-family: "Myriad Pro";
+    font-family: "Helvetica", sans-serif;
     color: rgb(255, 255, 255);
     line-height: 2.75;
     position: absolute;
     left: 430.844px;
-    top: -2.25px;
+
     z-index: 134;
 }
 
 .SHOESSHOP {
     font-size: 18px;
-    font-family: "Proxima Nova";
+    font-family: "Helvetica Light", serif;
     color: rgb(255, 255, 255);
     line-height: 2.75;
     position: absolute;
     left: 116.316px;
-    top: -1.25px;
+
     z-index: 133;
     cursor: pointer;
 }
 
 .About {
     font-size: 18px;
-    font-family: "Myriad Pro";
+    font-family: "Helvetica", serif;
     color: rgb(255, 255, 255);
     line-height: 2.75;
     position: absolute;
     left: 357.937px;
-    top: -1.25px;
+
     z-index: 132;
 }
 
 .Layer_19 {
     position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 0px;
-    height: 0px;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
     z-index: 130;
 }
 .Layer_18 {
     position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 0px;
-    height: 0px;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
     z-index: 129;
 }
 .Home {
     font-size: 18px;
-    font-family: "Myriad Pro";
+    font-family: "Helvetica", serif;
     color: rgb(212, 172, 113);
     line-height: 2.75;
     position: absolute;
     left: 284.844px;
-    top: -1.25px;
+
     z-index: 129;
 
 }
@@ -149,7 +144,7 @@ a{
     border-radius: 50%;
     background-color: #f7f0f0;
     position: absolute;
-    left: 906px;
+    left:690px;
     top: 456px;
     width: 20px;
     height: 18px;
@@ -159,7 +154,7 @@ a{
     border-radius: 50%;
     background-color: rgb(244, 241, 237);
     position: absolute;
-    left: 969px;
+    left: 746px;
     top: 456px;
     width: 20px;
     height: 18px;
@@ -169,7 +164,7 @@ a{
     border-radius: 50%;
     background-color: rgb(244, 241, 237);
     position: absolute;
-    left: 938px;
+    left: 718px;
     top: 456px;
     width: 20px;
     height: 18px;
@@ -196,11 +191,11 @@ a{
 }
 .Big_Title_Here_Lorem_ipsum_dolor_sit_amet__cons {
     font-size: 36px;
-    font-family: "Proxima Nova";
+    font-family: "Proxima Nova", serif;
     color: rgb(0, 0, 0);
     line-height: 1.375;
     position: absolute;
-    left: 970px;
+    left: 766px;
     top: 92.45px;
     width: 566px;
     height: 174px;
@@ -208,17 +203,17 @@ a{
 }
 .Layer_20 {
     position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 0px;
-    height: 0px;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
     z-index: 120;
 }
 .Rounded_Rectangle_1 {
     border-radius: 4px;
     background-color: rgb(237, 28, 36);
     position: absolute;
-    left: 970px;
+    left: 766px;
     top: 284px;
     width: 150px;
     height: 49px;
@@ -227,11 +222,11 @@ a{
 }
 .SHOW_ME_MORE {
     font-size: 14px;
-    font-family: "Proxima Nova";
+    font-family: "Proxima Nova", serif;
     color: rgb(255, 255, 255);
     line-height: 1.714;
     position: absolute;
-    left: 986px;
+    left: 785px;
     top: 298.002px;
     z-index: 120;
     font-weight: bold;
@@ -255,7 +250,7 @@ a{
     height: 49px;
     z-index: 6;
     font-size: 18px;
-    font-family: "Helvetica";
+    font-family: "Helvetica", serif;
     /*font-weight: bold;*/
     color: rgb(0, 0, 0);
     padding-left: 21px;
@@ -272,14 +267,14 @@ a{
 /**********************categorais*********************/
 .categories_box {
     position: absolute;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     width: 1400px;
     height: 2416px;
     z-index: 37;
 }
 .Layer_7_copy_3 {
-    background-image: url("Layer 7 copy 3.png");
+    /*background-image: url("Layer 7 copy 3.png");*/
     position: absolute;
     left: 1091px;
     top: 923px;
@@ -288,7 +283,7 @@ a{
     z-index: 36;
 }
 .Layer_7_copy_2 {
-    background-image: url("Layer 7 copy 2.png");
+    /*background-image: url("Layer 7 copy 2.png");*/
     position: absolute;
     left: 1078px;
     top: 893px;
@@ -298,7 +293,7 @@ a{
 }
 .__copy_3 {
     font-size: 18px;
-    font-family: "Proxima Nova";
+    font-family: "Proxima Nova", serif;
     color: rgb(255, 255, 255);
     line-height: 1.667;
     position: absolute;
@@ -318,7 +313,7 @@ a{
 }
 ._ {
     font-size: 18px;
-    font-family: "Proxima Nova";
+    font-family: "Proxima Nova", serif;
     color: rgb(255, 255, 255);
     line-height: 1.667;
     position: absolute;
@@ -338,7 +333,7 @@ a{
 }
 ._ {
     font-size: 18px;
-    font-family: "Proxima Nova";
+    font-family: "Proxima Nova", serif;
     color: rgb(255, 255, 255);
     line-height: 1.667;
     position: absolute;
@@ -358,7 +353,7 @@ a{
 }
 ._ {
     font-size: 18px;
-    font-family: "Proxima Nova";
+    font-family: "Proxima Nova", serif;
     color: rgb(255, 255, 255);
     line-height: 1.667;
     position: absolute;
@@ -377,7 +372,7 @@ a{
     z-index: 27;
 }
 .Layer_7_copy {
-    background-image: url("Layer 7 copy.png");
+    /*background-image: url("Layer 7 copy.png");*/
     position: absolute;
     left: 1116px;
     top: 863px;
@@ -386,7 +381,7 @@ a{
     z-index: 26;
 }
 .Layer_7 {
-    background-image: url("Layer 7.png");
+    /*background-image: url("Layer 7.png");*/
     position: absolute;
     left: 1091px;
     top: 833px;
@@ -451,7 +446,7 @@ input:checked{
 }
 .CATEGORIES {
     font-size: 18px;
-    font-family: "Helvetica";
+    font-family: "Helvetica", serif;
     /*font-weight: bold;*/
     color: black;
     padding-left: 21px;
@@ -470,12 +465,97 @@ input:checked{
     height: 212px;
     z-index: 21;
 }
-/*****************************footer************************/
+/*************************** Search options *********************/
+.Rectangle_4b {
+    border-width: 1px;
+    border-color: rgb(204, 204, 204);
+    border-style: solid;
+    background-color: rgb(233, 233, 233);
+    position: absolute;
+    right: 115px;
+    top: 1000px;
+    width: 268px;
+    height: 328px;
+    z-index: 10;
+}
+.SEARCH_OPTIONS {
+    font-size: 18px;
+    font-family: "Helvetica", "Myriad Pro", serif;
+    color: rgb(0, 0, 0);
+    line-height: 2.75;
+    padding-left: 21px;
+}
+.Layer_6b {
+    background-image: url("../images/cattegory_hr.png");
+    width: 267px;
+    height: 1px;
+    z-index: 23;
+    right: 116px;
+}
+
+.search_dropdwon {
+    font-size: 18px;
+    font-family: "Myriad Pro";
+    color: rgb(0, 0, 0);
+    line-height: 2.75;
+    border: none;
+    width: 227px;
+    margin-top: 30px;
+    margin-left: 21px;
+    padding-left: 21px;
+    outline: none;
+    height: 33px;
+}
+
+.HIGH_to_LOW {
+    font-size: 18px;
+    font-family: "Myriad Pro";
+    color: rgb(0, 0, 0);
+    line-height: 2.75;
+    margin-top: 104px;
+    margin-left: 52px;
+    cursor: pointer;
+}
+.LOW_to_HIGH {
+    font-size: 18px;
+    font-family: "Myriad Pro";
+    color: rgb(0, 0, 0);
+    line-height: 2.75;
+    margin-top: -20px;
+    margin-left: 52px;
+    cursor: pointer;
+}
+.HIGH_to_LOW:hover {
+    text-decoration: underline;
+    color: rgb(59, 4, 1);
+    font-weight: bold;
+
+}
+.LOW_to_HIGH:hover {
+    text-decoration: underline;
+    color: rgb(59, 4, 1);
+    font-weight: bold;
+}
+.addClass{
+    text-decoration: underline;
+    color: rgb(59, 4, 1);
+    font-weight: bold;
+}
+/*********************************Home page************************/
+.FEATURED_PRODUCTS {
+    font-size: 24px;
+    font-family: "Proxima Nova";
+    color: rgb(0, 0, 0);
+    line-height: 2.063;
+
+}
+
+    /*****************************footer************************/
 .Rectangle_6 {
     background-color: rgb(59, 4, 1);
     position: absolute;
-    left: -1px;
-    top: 2241px;
+
+    top: 1550px;
     width: 100%;
     height: 175px;
     z-index: 139;
@@ -487,7 +567,7 @@ input:checked{
     line-height: 2.75;
     position: absolute;
     left: 603.096px;
-    top: 2303.75px;
+
     z-index: 140;
 }
 .copyRights {
@@ -497,7 +577,7 @@ input:checked{
     line-height: 2.75;
     position: absolute;
     left: 723.987px;
-    top: 2303.75px;
+
     z-index: 142;
 }
 ._2017 {
@@ -507,6 +587,6 @@ input:checked{
     line-height: 2.75;
     position: absolute;
     left: 755.443px;
-    top: 2303.75px;
+
     z-index: 141;
 }
