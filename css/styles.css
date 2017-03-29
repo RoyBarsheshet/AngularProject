@@ -1,29 +1,24 @@
 @charset "utf-8";
-body {
-    margin:0;
-    padding:0;
-    width:100%;
-}
-html {
+html body {
     padding:0;
     margin:0;
+    width: 100%;
+    height: 100%;
 }
 .body_resize {
-    margin:0 auto;
     padding:0 20px 0 20px;
     width:892px;
     background:#fff;
+    min-height:100%;
+
 }
-.body {
-    margin:0;
-    padding:0;
-}
+
 .GRID {
     position: absolute;
     left: 0px;
     top: 0px;
     width: 100%;
-    height: 2416px;
+    min-height:100%;
     z-index: 138;
 }
 .Layer_109_copy {
@@ -47,35 +42,35 @@ html {
 }
 .Contact {
     font-size: 18px;
-    font-family: "Myriad Pro";
+    font-family: "Helvetica", sans-serif;
     color: rgb(255, 255, 255);
     line-height: 2.75;
     position: absolute;
     left: 430.844px;
-    top: -2.25px;
+
     z-index: 134;
 }
 
 .SHOESSHOP {
     font-size: 18px;
-    font-family: "Proxima Nova";
+    font-family: "Helvetica Light";
     color: rgb(255, 255, 255);
     line-height: 2.75;
     position: absolute;
     left: 116.316px;
-    top: -1.25px;
+
     z-index: 133;
     cursor: pointer;
 }
 
 .About {
     font-size: 18px;
-    font-family: "Myriad Pro";
+    font-family: "Helvetica";
     color: rgb(255, 255, 255);
     line-height: 2.75;
     position: absolute;
     left: 357.937px;
-    top: -1.25px;
+
     z-index: 132;
 }
 
@@ -97,12 +92,12 @@ html {
 }
 .Home {
     font-size: 18px;
-    font-family: "Myriad Pro";
+    font-family: "Helvetica";
     color: rgb(212, 172, 113);
     line-height: 2.75;
     position: absolute;
     left: 284.844px;
-    top: -1.25px;
+
     z-index: 129;
 
 }
@@ -470,12 +465,40 @@ input:checked{
     height: 212px;
     z-index: 21;
 }
+/*************************** Search options *********************/
+.Rectangle_4b {
+    border-width: 1px;
+    border-color: rgb(204, 204, 204);
+    border-style: solid;
+    background-color: rgb(233, 233, 233);
+    position: absolute;
+    right: 115px;
+    top: 1000px;
+    width: 268px;
+    height: 328px;
+    z-index: 10;
+}
+.SEARCH_OPTIONS {
+    font-size: 18px;
+    font-family: "Helvetica","Myriad Pro";
+    color: rgb(0, 0, 0);
+    line-height: 2.75;
+    padding-left: 21px;
+}
+.Layer_6b {
+    background-image: url("../images/cattegory_hr.png");
+    width: 267px;
+    height: 1px;
+    z-index: 23;
+    right: 116px;
+}
+
 /*****************************footer************************/
 .Rectangle_6 {
     background-color: rgb(59, 4, 1);
     position: absolute;
-    left: -1px;
-    top: 2241px;
+
+    top: 1550px;
     width: 100%;
     height: 175px;
     z-index: 139;
@@ -487,7 +510,7 @@ input:checked{
     line-height: 2.75;
     position: absolute;
     left: 603.096px;
-    top: 2303.75px;
+
     z-index: 140;
 }
 .copyRights {
@@ -497,7 +520,7 @@ input:checked{
     line-height: 2.75;
     position: absolute;
     left: 723.987px;
-    top: 2303.75px;
+
     z-index: 142;
 }
 ._2017 {
@@ -507,6 +530,6 @@ input:checked{
     line-height: 2.75;
     position: absolute;
     left: 755.443px;
-    top: 2303.75px;
+
     z-index: 141;
 }
