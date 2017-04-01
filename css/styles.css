@@ -5,6 +5,9 @@ html body {
     width: 100%;
     height: 100%;
 }
+li{
+    list-style-type: none;
+}
 .body_resize {
     padding:0 20px 0 20px;
     width:892px;
@@ -515,6 +518,7 @@ input:checked{
     margin-top: 104px;
     margin-left: 52px;
     cursor: pointer;
+
 }
 .LOW_to_HIGH {
     font-size: 18px;
@@ -547,8 +551,32 @@ input:checked{
     font-family: "Proxima Nova";
     color: rgb(0, 0, 0);
     line-height: 2.063;
+    position: absolute;
+    left: 112.872px;
+    top: 615.244px;
+    z-index: 41;
+    font-weight: bold;
+}
+.Layer_2 {
+    background-image: url("../images/Layer_2.png");
+    position: absolute;
+    left: 115px;
+    top: 666px;
+    width: 871px;
+    height: 1px;
+    z-index: 42;
+}
+.pinkShoe {
+    background-image: url("../images/pinkshoe.png");
+    position: absolute;
+    left: 117px;
+    top: 668px;
+    width: 268px;
+    height: 191px;
+    z-index: 43;
 
 }
+
 
     /*****************************footer************************/
 .Rectangle_6 {
