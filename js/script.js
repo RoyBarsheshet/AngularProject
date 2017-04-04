@@ -1,3 +1,11 @@
-/**
- * Created by ROY on 24/03/2017.
- */
+//header slider
+// $('.Layer_6').css('display','none');
+// $('.Layer_6').slideDown(1300);
+var  shoeApp = angular.module("shoeModule",[ngRoute])
+    .config(function ($routeProvider) {
+       $routeProvider
+           .when("/")
+
+    })
+
+;

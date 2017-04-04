@@ -1,11 +1,13 @@
-<!DOCGirlshtml>
-<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
-      xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<!DOCTYPE html>
+<html ng-app="shoeModule">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
-    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-route.min.js"></script>
+    <script src="angoular_project_git/AngularProject/js/script.js"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="body">
@@ -16,7 +18,7 @@
 
             <nav>
                 <div class="Rectangle_1 Sub_Nav Layer_18 Layer_19">
-                    <div class="SHOESSHOP"><a href="/"></a>SHOES<b>SHOP</b></div>
+                    <div class="SHOESSHOP"><a href="/"></a>SHOES<b class="bold">SHOP</b></div>
                     <div class="Home"><a href=""></a>Home</div>
                     <div class="About"><a href=""></a>About</div>
                     <div class="Contact"><a href=""></a>Contact Us</div>
@@ -76,8 +78,8 @@
 
                 <div class="Rectangle_4b"><div class="SEARCH_OPTIONS">SEARCH OPTIONS</div>
                     <div class="Layer_6b"></div>
-                    <select class="search_dropdwon">
-                        <option></option>
+                    <select class="search_dropdwon" placeholder="Choose..">
+                        <option>Choose...</option>
                         <option>Choose by name</option>
                         <option>Choose by manufacturer</option>
                     </select>
