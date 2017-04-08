@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html ng-app="shoeModule">
+<html ng-app="shoeModule" ng-controller="mainController">
 <head>
+    <title>ShoesSHOP | {{title}}</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-route.min.js"></script>
-    <script src="angoular_project_git/AngularProject/js/script.js"></script>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
 </head>
 <body class="body">
 <div class="body_resize">
@@ -19,9 +18,9 @@
             <nav>
                 <div class="Rectangle_1 Sub_Nav Layer_18 Layer_19">
                     <div class="SHOESSHOP"><a href="/"></a>SHOES<b class="bold">SHOP</b></div>
-                    <div class="Home"><a href=""></a>Home</div>
-                    <div class="About"><a href=""></a>About</div>
-                    <div class="Contact"><a href=""></a>Contact Us</div>
+                    <div class="Home active"><a href="#!/home" ng-click="setActive($event)"></a>Home</div>
+                    <div class="About"><a href="#!/about" ng-click="setActive($event)"></a>About</div>
+                    <div class="Contact"><a href="#!/contactUs" ng-click="setActive($event)"></a>Contact Us</div>
                 </div>
             </nav>
 
@@ -53,9 +52,7 @@
         <section>
             <div class="FEATURED_PRODUCTS">FEATURED PRODUCTS</div>
             <div class="Layer_2"></div>
-            <ul class="ShoesListUl">
-                <li><img src="images/pinkshoe.png"/><hr><div>Pink Girly  Shoe</br><span>NIKE</span></br><div>it is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout...</div></div></li>
-            </ul>
+            <ng-view></ng-view>
         </section>
             <aside>
 
@@ -103,6 +100,7 @@
 
 
 
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
 </body>
 </html>

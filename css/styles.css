@@ -107,13 +107,17 @@ li{
 .Home {
     font-size: 18px;
     font-family: "Helvetica", serif;
-    color: rgb(212, 172, 113);
+    color: rgb(255, 255, 255);
     line-height: 2.75;
     position: absolute;
     left: 284.844px;
 
     z-index: 129;
 
+}
+.active{
+    color: rgb(212, 172, 113);
+    font-weight: bold;
 }
 .Home:hover{
     font-weight: bold;
@@ -265,7 +269,7 @@ a{
     position: absolute;
     right: 115px;
     top: 666px;
-    width: 270px;
+    width: 245px;
     height: 49px;
     z-index: 6;
     font-size: 18px;
@@ -277,8 +281,12 @@ a{
     cursor: text;
 }
 .Rectangle_4_copy:focus{
-    border: 1px solid;
-    outline: rgb(0, 0, 0);
+    outline: none;
+    box-shadow: 0 0 5px 1px #969696;
+    transition: box-shadow 0.3s, border 0.3s;
+}
+.Rectangle_4_copy:focus::-webkit-input-placeholder{
+    color: #969696;
 }
 .Rectangle_4_copy::-webkit-input-placeholder {
     color: black;
