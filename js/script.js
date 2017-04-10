@@ -2,12 +2,12 @@
 // $('.Layer_6').css('display','none');
 // $('.Layer_6').slideDown(1300);
 var shoeCache = {};
-var  shoeApp = angular.module("shoeModule",["ngRoute"])
+var  shoeApp = angular.module("shoeModule", ["ngRoute"])
     .config(function ($routeProvider) {
        $routeProvider
-           .when("/",
+           .when("/home",
                {
-                   tamplateUrl:"tpl/home.html",
+                   tamplateUrl:"/tpl/home.html",
                    controller:"homeController",
                    pageTitle:"Welcome"
                })
@@ -29,7 +29,7 @@ var  shoeApp = angular.module("shoeModule",["ngRoute"])
                    controller:"productController",
                    pageTitle:"Contact US"
                })
-           .otherwise({redirectTo:"/"});
+           .otherwise({redirectTo:"/home"});
     })
 
     //---------------Add and remove active class from nav button-----------//
@@ -45,6 +45,7 @@ var  shoeApp = angular.module("shoeModule",["ngRoute"])
 
     })
 
+    //---------------------controllers------------------------//
 .controller("homeController",function ($rootScope,$scope,$route,$http) {
     $rootScope.title = $route.current.$$route.pageTitle;
 
@@ -58,15 +59,74 @@ var  shoeApp = angular.module("shoeModule",["ngRoute"])
 
         }, function errorCallback(response) {
             console.log("ERROR READING FILE!!!");
-        })
-
-        .controller("aboutController", function ($rootScope, $scope, $route, $http) {
-            $rootScope.title = $route.current.$$route.pageTitle;
-        })
-        .controller("contactUsController", function ($rootScope, $scope, $route, $http) {
-            $rootScope.title = $route.current.$$route.pageTitle;
-        })
-        .controller("productController", function ($rootScope, $scope, $route, $http) {
-            $rootScope.title = $route.current.$$route.pageTitle;
         });
-});
+    $scope.sortShoes= "+shoeName";
+
+    $scope.sortByPrice= function (by) {
+        $scope.sortShoes=by;
+        this.clearSortPrice();
+        event.target.className ="press-active";
+
+    };
+
+    $scope.clearSortPrice = function () {
+        var links = document.querySelectorAll('#sort-price-links li a');
+        for (var x=0; x<links.length; x++){
+            links[x].className= "";
+        }
+
+    };
+    $scope.filterCategories = function () {
+        this.clearSortPrice();
+        var data=[];
+        for(var  i =0;i<$scope.categories.length;i++){
+            for(var x=0;x<shoeCache.length;x++){
+                if($scope.categories[i]== shoeCache[x].bookCategory){
+                    if($scope[$scope.categories[i]]== true){
+                        data.push(shoeCache[x]);
+                    }
+                }
+            }
+        }
+        $scope.shoes=(data.length>0)? data:shoeCache;
+
+    };
+})
+
+        .controller("aboutController", function ($rootScope, $scope, $route) {
+            $rootScope.title = $route.current.$$route.pageTitle;
+        })
+        .controller("contactUsController", function ($rootScope, $scope, $route) {
+            $rootScope.title = $route.current.$$route.pageTitle;
+        })
+        .controller("productController", function ($rootScope, $scope, $route, $http,$routeParams) {
+            $http({
+                method: 'GET',
+                url: 'js/shoes.jason'
+            })
+            .then(function successCallback(response) {
+            var allShoes = response.data;
+            $scope.shoes = getShoeDetails($routeParams.shoeID, allShoes);
+            $rootScope.title = $scope.shoes.bookname;
+
+        }, function errorCallback (response) {
+            console.log("ERROR READING FILE!!");
+            });
+        });
+function getShoeDetails(shoeID,allShoes) {
+    for(var x=0;x<allShoes.length; x++){
+        if (allShoes[x].shoeID == shoeID){
+            return allShoes[x];
+        }
+    }
+
+}
+function getCategories(shoes) {
+    var categories = new array();
+   for(var x=0; x<shoes.length;x++){
+       if (categories.indexOf(shoes[x].shoeCategory)== -1){
+           categories.push(shoes[x].shoeCategory);
+       }
+   }
+   return categories;
+}

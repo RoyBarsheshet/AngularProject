@@ -1,3 +1,4 @@
+[
 {
   "compilerOptions": {
     "module": "commonjs",
@@ -7,4 +8,97 @@
   "exclude": [
     "node_modules"
   ]
-}
+},
+
+  {
+    "shoeID": 1,
+    "shoeCategory":"Man",
+    "shoeName":"",
+    "shoeImage":"",
+    "shoePrice":"99",
+    "shoeBrand":"NIKE",
+    "shoeArticle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+
+  },
+  {
+    "shoeID": 2,
+    "shoeCategory":"Man",
+    "shoeName":"",
+    "shoeImage":"",
+    "shoePrice":"99",
+    "shoeBrand":"NIKE",
+    "shoeArticle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+
+  },
+  {
+    "shoeID": 3,
+    "shoeCategory":"Man",
+    "shoeName":"",
+    "shoeImage":"",
+    "shoePrice":"99",
+    "shoeBrand":"NIKE",
+    "shoeArticle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+
+  },
+  {
+    "shoeID": 4,
+    "shoeCategory":"Man",
+    "shoeName":"",
+    "shoeImage":"",
+    "shoePrice":"99",
+    "shoeBrand":"NIKE",
+    "shoeArticle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+
+  },
+  {
+    "shoeID": 5,
+    "shoeCategory":"Man",
+    "shoeName":"",
+    "shoeImage":"",
+    "shoePrice":"99",
+    "shoeBrand":"NIKE",
+    "shoeArticle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+
+  },
+  {
+    "shoeID": 6,
+    "shoeCategory":"Man",
+    "shoeName":"",
+    "shoeImage":"",
+    "shoePrice":"99",
+    "shoeBrand":"NIKE",
+    "shoeArticle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+
+  },
+  {
+    "shoeID": 7,
+    "shoeCategory":"Man",
+    "shoeName":"",
+    "shoeImage":"",
+    "shoePrice":"99",
+    "shoeBrand":"NIKE",
+    "shoeArticle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+
+  },
+  {
+    "shoeID": 8,
+    "shoeCategory":"Man",
+    "shoeName":"",
+    "shoeImage":"",
+    "shoePrice":"99",
+    "shoeBrand":"NIKE",
+    "shoeArticle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+
+  },
+  {
+    "shoeID": 9,
+    "shoeCategory":"Man",
+    "shoeName":"",
+    "shoeImage":"",
+    "shoePrice":"99",
+    "shoeBrand":"NIKE",
+    "shoeArticle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+
+  }
+
+  ]

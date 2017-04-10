@@ -9,6 +9,9 @@ html body {
 li{
     list-style-type: none;
 }
+a{
+    text-decoration: none;
+}
 .body_resize {
     padding:0 20px 0 20px;
     width:892px;
@@ -282,8 +285,12 @@ a{
 }
 .Rectangle_4_copy:focus{
     outline: none;
-    box-shadow: 0 0 5px 1px #969696;
+    box-shadow:0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
     transition: box-shadow 0.3s, border 0.3s;
+    transition-delay: 0s;
+    transition-duration:0.2s;
+    transition-property:box-shadow;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 .Rectangle_4_copy:focus::-webkit-input-placeholder{
     color: #969696;
