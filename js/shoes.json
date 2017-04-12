@@ -12,62 +12,62 @@
 
   {
     "shoeID": 1,
-    "shoeCategory":"Man",
-    "shoeName":"",
-    "shoeImage":"",
-    "shoePrice":"99",
-    "shoeBrand":"NIKE",
-    "shoeArticle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    "shoeCategory":"KIDS",
+    "shoeName":"ADIZERO 5-STAR 6.0 CLEATS",
+    "shoeImage":"shoes/adidas_kids.jpg",
+    "shoePrice":"29",
+    "shoeBrand":"ADIDAS",
+    "shoeArticle": "Leave your opponents looking like statues. Built with a SPRINTSKIN™ upper, these juniors' football cleats shed weight to boost speed. The heel cup offers a secure fit, while a TPU fly plate gives lightweight traction. An EVA insole keeps you comfortable as you race down the sidelines.."
 
   },
   {
     "shoeID": 2,
-    "shoeCategory":"Man",
-    "shoeName":"",
-    "shoeImage":"",
+    "shoeCategory":"MEN",
+    "shoeName":"ALPHABOUNCE REIGNING CHAMP SHOES",
+    "shoeImage":"shoes/adidas_men.jpg",
     "shoePrice":"99",
-    "shoeBrand":"NIKE",
-    "shoeArticle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    "shoeBrand":"ADIDAS",
+    "shoeArticle": "Designed in collaboration with Canadian label Reigning Champ, these men's running shoes will help you find your flow. A seamless FORGEDMESH upper gives them a sock-like fit, and a BOUNCE™ midsole delivers flexible cushioning for enhanced comfort and long-distance support.."
 
   },
   {
     "shoeID": 3,
-    "shoeCategory":"Man",
-    "shoeName":"",
-    "shoeImage":"",
-    "shoePrice":"99",
-    "shoeBrand":"NIKE",
-    "shoeArticle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    "shoeCategory":"WOMEN",
+    "shoeName":"SUPERSTAR BOOST SHOES",
+    "shoeImage":"shoes/adidas_woman.jpg",
+    "shoePrice":"79",
+    "shoeBrand":"ADIDAS",
+    "shoeArticle": "Launched in 1970 as a revolutionary basketball performance style, the adidas Superstar shoe was the sport's first all-leather sneaker. In '80s New York City, hip-hop heroes lifted a pair up on stage and dedicated a song to them. A legend was born. As fresh as ever, this modern version of the adidas Superstar shoe has the energy-returning feel of boost™. The women's shoes get the royal treatment with a super-shiny metallic upper. Finished with the famous rubber shell toe and herringbone-pattern tread."
 
   },
   {
     "shoeID": 4,
-    "shoeCategory":"Man",
-    "shoeName":"",
-    "shoeImage":"",
-    "shoePrice":"99",
-    "shoeBrand":"NIKE",
-    "shoeArticle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    "shoeCategory":"KIDS",
+    "shoeName":"420 New Balance",
+    "shoeImage":"shoes/newBalance_kids.jpg",
+    "shoePrice":"59",
+    "shoeBrand":"NEW BALANCE",
+    "shoeArticle": "The classic 420 gets a modern revision perfect for the moment you realize cute is no longer cool. A durable mesh/synthetic upper and a comfortable outsole ensure your child is ready for anything. Plus, sneaker has a sporty style with a sleek fit easily making it their go-to shoe no matter the adventure."
 
   },
   {
     "shoeID": 5,
-    "shoeCategory":"Man",
-    "shoeName":"",
-    "shoeImage":"",
-    "shoePrice":"99",
-    "shoeBrand":"NIKE",
-    "shoeArticle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    "shoeCategory":"MEN",
+    "shoeName":"New Balance 2040v3 Leather",
+    "shoeImage":"shoes/newBalance_men.jpg",
+    "shoePrice":"89",
+    "shoeBrand":"NEW BALANCE",
+    "shoeArticle": "You’re out there, day after day, working hard to put in the miles. Reward yourself with the pinnacle running experience. The New Balance 2040v3 neutral running shoe for men combines the finest American-made Horween® leather with plush cushioning for a feel so comfortable, and a look so luxurious, you’ll want to wear it everyday."
 
   },
   {
     "shoeID": 6,
-    "shoeCategory":"Man",
-    "shoeName":"",
-    "shoeImage":"",
-    "shoePrice":"99",
+    "shoeCategory":"WOMEN",
+    "shoeName":"Vazee Rush",
+    "shoeImage":"shoes/newBalance_women.jpg",
+    "shoePrice":"84",
     "shoeBrand":"NIKE",
-    "shoeArticle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    "shoeArticle": "Slip on and go. Taking design cues from the Vazee running shoe, the Vazee Rush was built for comfort with its lightweight and sporty slip-on design. This casual everyday sneaker features a comfortable REVlite midsole and a stretch collar for easy wear. Plus, its smooth leather-like strap adds a touch of sophistication to your relaxed look."
 
   },
   {

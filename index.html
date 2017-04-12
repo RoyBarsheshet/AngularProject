@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html ng-app="shoeModule" ng-controller="mainController">
 <head>
     <title>ShoesSHOP | {{title}}</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="images/favIocn/favicon.ico" rel="icon" type="image/x-icon" />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-route.min.js"></script>
     <script src="js/script.js"></script>
@@ -16,11 +17,14 @@
         <header>
 
             <nav>
+                <div><a href="#" class="SHOESSHOP">SHOES<b class="bold">SHOP</b></a></div>
                 <div class="Rectangle_1 Sub_Nav Layer_18 Layer_19">
-                    <div><a href="/" class="SHOESSHOP">SHOES<b class="bold">SHOP</b></a></div>
-                    <div><a href="/home" class="Home active" ng-click="setActive($event)">Home</a></div>
-                    <div><a href="/about" class="About" ng-click="setActive($event)">About</a></div>
-                    <div><a href="/contactUs" class="Contact" ng-click="setActive($event)">Contact Us</a></div>
+                <div id="container">
+                        <div id="nav">
+                            <a href="#!/home" class="active" ng-click="setActive($event)">Home</a>
+                            <a href="#!/about" ng-click="setActive($event)">About</a>
+                            <a href="#!/contactUs" ng-click="setActive($event)">Contact</a>
+                        </div>
                 </div>
             </nav>
 
@@ -39,8 +43,7 @@
                 <div class="Layer_20">
                     <div class="Big_Title_Here_Lorem_ipsum_dolor_sit_amet__cons"><b>THE NEW JORDAN'S</b>
                         </br>
-                        New air jordan's 2017 is out new!
-                        Wanna know more?
+                        Discover The Air Jordan Collection Now! Find Your Style & Buy Online
                     </div>
                 </div>
                 </div>
@@ -49,10 +52,10 @@
             </div>
            </article>
                     </section>
+        <section>
+        <ng-view></ng-view>
 
-            <!--<div class="unopen-cattegorys">-->
-            <!--<img src="images/unopen_cattegorys.gif" width="18" height="18" alt="">-->
-            <!--</div>-->
+        </section>
     </div>
 </div>
             <footer>
@@ -66,7 +69,7 @@
 
 
 
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
 
 </body>
 </html>

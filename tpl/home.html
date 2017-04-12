@@ -1,15 +1,21 @@
-<!--<div ng-controller="homeController">-->
+<div ng-controller="homeController">
     <section>
         <div class="FEATURED_PRODUCTS">FEATURED PRODUCTS</div>
         <div class="Layer_2"></div>
-        <ng-view></ng-view>
+
     </section>
-<ul class="ShoesListUl">
-    <li><img src="images/pinkshoe.png"/><hr><div>Pink Girly Shoe</br><span>NIKE</span></br><div>it is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout...</div></div></li>
-</ul>
+    <ul class="ShoesListUl">
+        <li><img src="images/pinkshoe.png"/>
+            <hr>
+            <div>{{shoe.shoeName}}</br><span>{{shoe.shoeBrand}}</span></br>
+                <p>{{shoe.shoeArticle}}</P>
+                <p>${{shoe.shoePrice}}</p>
+            </div>
+        </li>
+    </ul>
     <aside>
 
-        <input type="text" class="Rectangle_4_copy search SEARCH" placeholder="SEARCH"/>
+        <input type="text" class="Rectangle_4_copy search SEARCH" placeholder="SEARCH" ng-model="searchText.shoeName"/>
 
         <div class="Rectangle_4 CATEGORIES">CATEGORIES</div>
 
@@ -24,7 +30,8 @@
         <input type="checkbox" class="unopen-cattegorys3"/>
 
 
-        <div class="Rectangle_4b"><div class="SEARCH_OPTIONS">SEARCH OPTIONS</div>
+        <div class="Rectangle_4b">
+            <div class="SEARCH_OPTIONS">SEARCH OPTIONS</div>
             <div class="Layer_6b"></div>
             <select class="search_dropdwon" placeholder="Choose..">
                 <option>Choose...</option>
@@ -35,4 +42,4 @@
             <span class="LOW_to_HIGH">LOW to HIGH</span>
         </div>
     </aside>
-<!--</div>-->
+</div>
