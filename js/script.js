@@ -1,6 +1,3 @@
-//header slider
-// $('.Layer_6').css('display','none');
-// $('.Layer_6').slideDown(1300);
 var shoeCache = {};
 var  shoeApp = angular.module("shoeModule", ["ngRoute"])
     .config(function ($routeProvider) {
@@ -27,21 +24,29 @@ var  shoeApp = angular.module("shoeModule", ["ngRoute"])
                {
                    tamplateUrl:"tpl/product.html",
                    controller:"productController",
-                   pageTitle:"Contact US"
+                   pageTitle:"{{shoeName}}"
                })
-           .otherwise({redirectTo:"/home"});
+           .otherwise({redirectTo:"/"});
     })
 
     //---------------Add and remove active class from nav button-----------//
     .controller("mainController",function ($rootScope,$scope,$route) {
         $scope.setActive = function (event) {
-
-            var links = document.querySelectorAll('.menu ul li a');
-            for (var x = 0; x < links.length; x++) {
-                links[x].className = "";
-            }
-            angular.elemnt(event.target).parent().addClass("active");
-        };
+    //
+    //         var links = document.querySelectorAll('.Layer_19 ul li a');
+    //         for (var x = 0; x < links.length; x++) {
+    //             links[x].className = "";
+    //         }
+    //         angular.element(event.target).parent().addClass("active");
+    //     };
+var links = document.querySelectorAll('#nav a');
+for (var x = 1; x < links.length; x++) {
+    links[x].className = "";
+    console.log(links[1]);
+}
+console.log(event);
+angular.element(event.target).addClass("active");
+};
 
     })
 
@@ -93,10 +98,10 @@ var  shoeApp = angular.module("shoeModule", ["ngRoute"])
     };
 })
 
-        .controller("aboutController", function ($rootScope, $scope, $route) {
+        .controller("aboutController", function ($rootScope,$route) {
             $rootScope.title = $route.current.$$route.pageTitle;
         })
-        .controller("contactUsController", function ($rootScope, $scope, $route) {
+        .controller("contactUsController", function ($rootScope,$route) {
             $rootScope.title = $route.current.$$route.pageTitle;
         })
         .controller("productController", function ($rootScope, $scope, $route, $http,$routeParams) {

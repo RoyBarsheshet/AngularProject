@@ -9,9 +9,8 @@ html body {
 li{
     list-style-type: none;
 }
-a{
-    text-decoration: none;
-}
+
+
 .body_resize {
     padding:0 20px 0 20px;
     width:892px;
@@ -75,21 +74,13 @@ a{
     line-height: 2.75;
     position: absolute;
     left: 116.316px;
-
+text-decoration: none;
     z-index: 133;
     cursor: pointer;
 }
 
-.About {
-    font-size: 18px;
-    font-family: "Helvetica", serif;
-    color: rgb(255, 255, 255);
-    line-height: 2.75;
-    position: absolute;
-    left: 357.937px;
 
-    z-index: 132;
-}
+
 
 .Layer_19 {
     position: absolute;
@@ -107,45 +98,51 @@ a{
     height: 0;
     z-index: 129;
 }
-.Home {
-    font-size: 18px;
-    font-family: "Helvetica", serif;
-    color: rgb(255, 255, 255);
-    line-height: 2.75;
-    position: absolute;
-    left: 284.844px;
 
-    z-index: 129;
+#nav a:hover{
+    color: rgb(212, 172, 113);
+    font-weight: bold;
+    transition: all .2s ease-in-out;
+    font-size: 26px;
+}
+#nav a.active{
+    color: rgb(212, 172, 113);
+    font-weight: bold;
+}
+
+#nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    float: left;
+
+    color: white;
+    padding-left: 40px;
+    padding-top: 13px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+
+    position: relative;
+    left: 238px;
 
 }
-.active{
-    color: rgb(212, 172, 113);
-    font-weight: bold;
-}
-.Home:hover{
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 20px;
-    transition: all .2s ease-in-out;
-    color: rgb(212, 172, 113);
-}
-.About:hover{
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 20px;
-    transition: all .2s ease-in-out;
-    color: rgb(212, 172, 113);
-}
-.Contact:hover{
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 20px;
-    transition: all .2s ease-in-out;
-    color: rgb(212, 172, 113);
-}
-a{
-    width: 100%;
-}
+/*.About:hover{*/
+    /*font-weight: bold;*/
+    /*cursor: pointer;*/
+    /*font-size: 20px;*/
+    /*transition: all .2s ease-in-out;*/
+    /*color: rgb(212, 172, 113);*/
+/*}*/
+/*.Contact:hover{*/
+    /*font-weight: bold;*/
+    /*cursor: pointer;*/
+    /*font-size: 20px;*/
+    /*transition: all .2s ease-in-out;*/
+    /*color: rgb(212, 172, 113);*/
+/*}*/
+/*a{*/
+    /*width: 100%;*/
+/*}*/
 .Rectangle_1 {
     background-color: rgb(0, 0, 0);
     position: fixed;
