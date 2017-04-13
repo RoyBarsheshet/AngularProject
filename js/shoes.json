@@ -72,33 +72,77 @@
   },
   {
     "shoeID": 7,
-    "shoeCategory":"Man",
-    "shoeName":"",
-    "shoeImage":"",
-    "shoePrice":"99",
+    "shoeCategory":"KIDS",
+    "shoeName":"NIKE AIR ZOOM PEGASUS 33",
+    "shoeImage":"shoes/nike_kids.jpg",
+    "shoePrice":"39",
     "shoeBrand":"NIKE",
-    "shoeArticle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    "shoeArticle": "The Nike Air Zoom Pegasus 33 Younger/Older Kids' Running Shoe combines a classic look with responsive cushioning and a locked-down fit to help you stay quick and comfortable during everyday runs or demanding races."
 
   },
   {
     "shoeID": 8,
-    "shoeCategory":"Man",
-    "shoeName":"",
-    "shoeImage":"",
-    "shoePrice":"99",
+    "shoeCategory":"KIDS",
+    "shoeName":"NIKE AIR MAX 2017",
+    "shoeImage":"shoes/nike_kids2.jpg",
+    "shoePrice":"44",
     "shoeBrand":"NIKE",
-    "shoeArticle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    "shoeArticle": "The Nike Air Max 2017 Older Kids' Running Shoe features a breathable mesh upper and soft cushioning for superb comfort from track training to the playground."
 
   },
   {
     "shoeID": 9,
-    "shoeCategory":"Man",
-    "shoeName":"",
-    "shoeImage":"",
-    "shoePrice":"99",
+    "shoeCategory":"MEN",
+    "shoeName":"NIKE SB ZOOM BLAZER LOW AC ",
+    "shoeImage":"shoe/nike_men.jpg",
+    "shoePrice":"69",
     "shoeBrand":"NIKE",
-    "shoeArticle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-
+    "shoeArticle": "The Nike SB Zoom Blazer Low AC 'Numbers' Men's Skateboarding Shoe continues a collaboration with newly launched skate brand Numbers, the brainchild of legendary pros Eric Koston and Guy Mariano. With its luxe suede and trio of hook-and-loop straps, this limited edition brings a bold look to the session—or wherever the session takes you."
+  },
+  {
+    "shoeID": 10,
+    "shoeCategory":"WOMEN",
+    "shoeName":"NIKE AIR MAX 2017",
+    "shoeImage":"shoe/nike_women.jpg",
+    "shoePrice":"88",
+    "shoeBrand":"NIKE",
+    "shoeArticle": "Seamlessly designed with support and breathability right where you need it, the Nike Air Max 2017 Women's Running Shoe features a Flymesh upper combined with the plush cushioning of a full-length Max Air unit."
+  },
+  {
+    "shoeID": 11,
+    "shoeCategory":"KIDS",
+    "shoeName":"SUEDE JR SNEAKERS",
+    "shoeImage":"shoes/puma_kids.jpg",
+    "shoePrice":"34",
+    "shoeBrand":"PUMA",
+    "shoeArticle": "Born in 1968, the Suede was a warm-up shoe made infamous by athletic greats such as basketball's Walt Clyde Frazier and the track's Tommie Smith. It hit new levels of fame during the '80s dawn of b-boys and hip hop beats, and, to this day, it remains PUMA's most epic icon of sport-inspired style with its smooth suede and streetwise swagger. Here, it's shrunk down for young legends in the making."
+  },
+  {
+    "shoeID": 12,
+    "shoeCategory":"MEN",
+    "shoeName":"IGNITE 3 PWRCOOL MEN’S RUNNING SHOES",
+    "shoeImage":"shoes/puma_man2.jpg",
+    "shoePrice":"99",
+    "shoeBrand":"PUMA",
+    "shoeArticle": "Feel cooler and run faster in the all-new IGNITE 3 PWRCOOL. This cushioning shoe offers supreme energy return and breathability to make your runs even more fun and comfortable. The upper is equipped with open, deconstructed, super breathable mesh upper for ultimate airflow, combined with a TPU heel piece that will lock your foot perfectly onto the platform. With a faster Chevron design and a lightweight feel, the shoe's tooling delivers an increased energy return for an even smoother ride on hot summer days."
+  },
+  {
+    "shoeID": 13,
+    "shoeCategory":"MEN",
+    "shoeName":"IGNITE LIMITLESS REPTILE ",
+    "shoeImage":"shoes/puma_men.jpg",
+    "shoePrice":"79",
+    "shoeBrand":"PUMA",
+    "shoeArticle": "The IGNITE Limitless is our new take on the running shoe. This luxurious Reptile version fuses highly technical running features with the design mentality and attitude of modern streetwear. This model provides premium cushioning and energy return with full-length IGNITE Foam embedded in the midsole. Luxe detailing, bold branding and aggressive dimensions make this style a true game-changer."
+  },
+  {
+    "shoeID": 14,
+    "shoeCategory":"WOMEN",
+    "shoeName":"BASKET HEART DENIM WOMEN’S SNEAKERS",
+    "shoeImage":"shoes/puma_women.jpg",
+    "shoePrice":"59",
+    "shoeBrand":"PUMA",
+    "shoeArticle": "In the '60s, the Basket was one of several PUMA warm-up shoes to declare a new era on the basketball court. A bona fide brother of the PUMA Suede, it rapidly moved its way up the style roster by opting for allover leather. The Basket scored through many a practice round and pick up game and was later adopted by the hip hop scene – turning those swift basket dunks to funky funk beats and transforming an everyday court classic into the most debonair of pop culture legends. The Basket Heart Denim gives the court classic a feminine look with its oversized laces and a denim-inspired textile upper."
   }
 
   ]
