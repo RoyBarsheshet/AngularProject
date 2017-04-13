@@ -62,7 +62,7 @@ angular.element(event.target).addClass("active");
         .then(function SuccessCallback(response) {
             $scope.shoes = shoeCache = response.data;
             $scope.categories = getCategories($scope.shoes);
-
+            $scope.TypeOF = getTypeOF($scope.shoes);
         }, function errorCallback(response) {
             console.log("ERROR READING FILE!!!");
         });
@@ -71,7 +71,15 @@ angular.element(event.target).addClass("active");
     $scope.sortByPrice= function (by) {
         $scope.sortShoes=by;
         this.clearSortPrice();
-        event.target.className ="press-active";
+        event.target.idName ="HtoL";
+
+    };
+    $scope.sortShoes= "+shoeName";
+
+    $scope.sortByPrice= function (by) {
+        $scope.sortShoes=by;
+        this.clearSortPrice();
+        event.target.idName ="HtoL";
 
     };
 
@@ -83,18 +91,33 @@ angular.element(event.target).addClass("active");
 
     };
     $scope.filterCategories = function () {
-        this.clearSortPrice();
-        var data=[];
-        for(var  i =0;i<$scope.categories.length;i++){
-            for(var x=0;x<shoeCache.length;x++){
-                if($scope.categories[i]=== shoeCache[x].shoeCategory){
-                    if($scope[$scope.categories[i]]=== true){
+        var data = [];
+
+        for(var i=0; i< $scope.categories.length;i++){
+            for(var x=0;x< shoeCache.length;x++){
+                if($scope.categories[i] == shoeCache[x].shoeCategory){
+                    if($scope[$scope.categories[i]] === true){
                         data.push(shoeCache[x]);
                     }
                 }
             }
         }
         $scope.shoes=(data.length>0)? data:shoeCache;
+
+    };
+    $scope.filterTypeOF = function () {
+        var data2 = [];
+
+        for(var i=0; i< $scope.TypeOF.length;i++){
+            for(var x=0;x< shoeCache.length;x++){
+                if($scope.TypeOF[i] == shoeCache[x].shoeType){
+                    if($scope[$scope.TypeOF[i]] === true){
+                        data2.push(shoeCache[x]);
+                    }
+                }
+            }
+        }
+        $scope.shoes=(data2.length>0)? data2:shoeCache;
 
     };
 })
@@ -128,7 +151,8 @@ function getShoeDetails(shoeID,allShoes) {
 
 }
 function getCategories(shoes) {
-    var categories = new array();
+    var categories = new Array();
+
    for(var x=0; x<shoes.length;x++){
        if (categories.indexOf(shoes[x].shoeCategory)== -1){
            categories.push(shoes[x].shoeCategory);
@@ -136,3 +160,17 @@ function getCategories(shoes) {
    }
    return categories;
 }
+function getTypeOF(shoes) {
+    var TypeOF = new Array();
+
+    for(var x=0; x<shoes.length;x++){
+        if (TypeOF.indexOf(shoes[x].shoeType)=== -1){
+            TypeOF.push(shoes[x].shoeType);
+        }
+    }
+    return TypeOF;
+}
+// $scope.$watch('searchText.shoeName', function(shoeBrand)
+// {
+//     $scope.id = shoeBrand;
+// });

@@ -587,6 +587,11 @@ input:checked{
     color: rgb(59, 4, 1);
     font-weight: bold;
 }
+#HtoL:active{
+    text-decoration: underline;
+    color: rgb(59, 4, 1);
+    font-weight: bold;
+}
 /*********************************Home page************************/
 .FEATURED_PRODUCTS {
     font-size: 24px;
@@ -594,7 +599,7 @@ input:checked{
     color: rgb(0, 0, 0);
     line-height: 2.063;
     position: absolute;
-    left: 112.872px;
+    left: 146px;
     top: 615.244px;
     z-index: 41;
     font-weight: bold;
@@ -604,7 +609,7 @@ input:checked{
     position: absolute;
     left: 115px;
     top: 666px;
-    width: 871px;
+    width: 860px;
     height: 1px;
     z-index: 42;
 }
@@ -615,19 +620,87 @@ li{
 }
 #left{
     float:left;
-    width:1040px;
+    width:860px;
+    position: relative;
+    top:678px;
+    left:115px;
+    border-radius: 35px;
+    background-color: white;
 }
 /******************************homePage products******************/
 .shoesContainer{
-    border: 2px grey;
-    border-style:dotted;
+    /*border: 2px grey;*/
+    /*border-style:dotted;*/
     float: left;
-    margin: 10px 10px;
-    padding:10px;
-    width:300px;
+    width:272px;
+    height: 550px;
+    text-overflow: clip;
+    overflow: hidden;
 }
 .shoesContainer img{
     width: 200px;
+}
+p {
+    display: inline-flex;
+}
+.price{
+    color:#ed2028;
+    font-size: 24pt;
+    margin: 0;
+    padding-right: 10px;
+    position: relative;
+    bottom: 33px;
+}
+.home-btn{
+
+    border: 1px solid red;
+    text-decoration: none;
+    color:white;
+
+    font-size: 1em;
+
+    padding-top: 5px;
+    transition: 0.5s all ease-in-out;
+    text-align: center;
+
+    border-radius: 9px;
+    background-color: rgb(237, 28, 36);
+    width: 150px;
+    height: 44px;
+    cursor: pointer;
+}
+.home-btn a{
+    color:white;
+    font-size: 16pt;
+    text-decoration:none;
+    font-weight:bold;
+    font-family: Myriad Pro, serif;
+
+}
+.home-btn:hover ,.home-btn:focus{
+    box-shadow: 0 0 2px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.24);
+    transition: all .3s;
+}
+.tell-me-more{
+    font-size: 14px;
+    font-family: "Proxima Nova", serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.714;
+    z-index: 120;
+    font-weight: bold;
+    /*cursor: pointer;*/
+    position: relative;
+    left: 14px;
+}
+.pArticle{
+    float: right;
+    width:300px;
+    font-size:1.2em;
+    padding-right:50px;
+}
+h2 h3 h4 p{
+    margin: 0;
+    padding: 0;
 }
     /*****************************footer************************/
 .Rectangle_6 {

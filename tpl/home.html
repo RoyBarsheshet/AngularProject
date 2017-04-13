@@ -9,10 +9,14 @@
     <ul class="ShoesListUl">
         <li><img src="images/{{shoe.shoeImage}}" alt="{{shoe.shoeName}}" height="200" />
             <hr>
-            <div>{{shoe.shoeName}}</br><span>{{shoe.shoeBrand}}</span></br>
-                <p>{{shoe.shoeArticle}}</P>
-                <p>${{shoe.shoePrice}}</p>
-            </div>
+            <h3 style="height: 50px;">{{shoe.shoeName}}
+                <h3>{{shoe.shoeBrand}}</h3>
+                <h4>{{shoe.shoeCategory}}</h4>
+                <!--<h4>{{shoe.shoeArticle}}</h4></br>-->
+                <h4 class="price">${{shoe.shoePrice}}
+                <!--<p class="price">${{shoe.shoePrice}}<span class="sPrice">{{shoe.shoeSPrice}}</span></p><br>-->
+                    <p class="home-btn"><a class="tell-me-more" href="#!/shoe/{{shoe.shoeID}}">Tell me More</a></p></h4>
+            </h3>
         </li>
     </ul>
          </div>
@@ -20,7 +24,7 @@
     </section>
     <aside>
 
-        <input type="text" class="Rectangle_4_copy search SEARCH" placeholder="SEARCH" ng-model="searchText.shoeName"/>
+        <input type="text" class="Rectangle_4_copy search SEARCH" placeholder="SEARCH" ng-model="searchText.shoeBrand"/>
 
         <div class="Rectangle_4 CATEGORIES">CATEGORIES</div>
 
@@ -29,22 +33,22 @@
             <img src="images/categorays_type.gif" width="233" height="147" alt="">
         </div>
         <div class="Layer_6"></div>
-        <input type="checkbox" class="unopen-cattegorys"/>
-        <input type="checkbox" class="unopen-cattegorys1"/>
-        <input type="checkbox" class="unopen-cattegorys2"/>
-        <input type="checkbox" class="unopen-cattegorys3"/>
+        <input type="checkbox" class="unopen-cattegorys" ng-model="MEN" ng-click="filterCategories()"/>
+        <input type="checkbox" class="unopen-cattegorys1" ng-model="WOMEN" ng-click="filterCategories()"/>
+        <input type="checkbox" class="unopen-cattegorys2"  ng-model="KIDS" ng-click="filterCategories()"/>
+        <input type="checkbox" class="unopen-cattegorys3" ng-model="SPORTS" ng-click="filterCategories()"/>
 
 
         <div class="Rectangle_4b">
             <div class="SEARCH_OPTIONS">SEARCH OPTIONS</div>
             <div class="Layer_6b"></div>
-            <select class="search_dropdwon" placeholder="Choose..">
-                <option>Choose...</option>
-                <option>Choose by name</option>
-                <option>Choose by manufacturer</option>
+            <select class="search_dropdwon" placeholder="Choose.." ng-model="sortShoes" ng-click="clearSortPrice()">
+                <option value="+shoePrice">Choose...</option>
+                <option value="+shoeName">Choose by name</option>
+                <option value="+shoeBrand">Choose by manufacturer</option>
             </select>
-            <span class="HIGH_to_LOW">HIGH to LOW</span>
-            <span class="LOW_to_HIGH">LOW to HIGH</span>
+            <span id="HtoL" class="HIGH_to_LOW" ng-click='sortByPrice("-shoeName")'>HIGH to LOW</span>
+            <span id="a" class="LOW_to_HIGH" ng-click='sortByPrice("+shoeName")'>LOW to HIGH</span>
         </div>
     </aside>
 </div>

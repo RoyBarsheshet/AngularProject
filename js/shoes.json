@@ -1,148 +1,144 @@
 [
-{
-  "compilerOptions": {
-    "module": "commonjs",
-    "target": "es5",
-    "sourceMap": true
+  {
+    "compilerOptions": {
+      "module": "commonjs",
+      "target": "es5",
+      "sourceMap": true
+    },
+    "exclude": [
+      "node_modules"
+    ]
   },
-  "exclude": [
-    "node_modules"
-  ]
-},
-
   {
     "shoeID": 1,
-    "shoeCategory":"KIDS",
-    "shoeName":"ADIZERO 5-STAR 6.0 CLEATS",
-    "shoeImage":"shoes/adidas_kids.jpg",
-    "shoePrice":"29",
-    "shoeBrand":"ADIDAS",
-    "shoeArticle": "Leave your opponents looking like statues. Built with a SPRINTSKIN™ upper, these juniors' football cleats shed weight to boost speed. The heel cup offers a secure fit, while a TPU fly plate gives lightweight traction. An EVA insole keeps you comfortable as you race down the sidelines.."
-
+    "shoeCategory": "KIDS",
+    "shoeName": "ADIZERO 5-STAR 6.0 CLEATS",
+    "shoeImage": "shoes/adidas_kids.jpg",
+    "shoePrice": "29",
+    "shoeBrand": "ADIDAS",
+    "shoeArticle": "Leave your opponents looking like statues. Built with a SPRINTSKIN™ upper, these juniors' football cleats shed weight to boost speed. The heel cup offers a secure fit, while a TPU fly plate gives lightweight traction. An EVA insole keeps you comfortable as you race down the sidelines..",
+    "shoeType": "SPORTS"
   },
   {
     "shoeID": 2,
-    "shoeCategory":"MEN",
-    "shoeName":"ALPHABOUNCE REIGNING CHAMP SHOES",
-    "shoeImage":"shoes/adidas_men.jpg",
-    "shoePrice":"99",
-    "shoeBrand":"ADIDAS",
+    "shoeCategory": "MEN",
+    "shoeName": "ALPHABOUNCE REIGNING CHAMP SHOES",
+    "shoeImage": "shoes/adidas_men.jpg",
+    "shoePrice": "99",
+    "shoeBrand": "ADIDAS",
     "shoeArticle": "Designed in collaboration with Canadian label Reigning Champ, these men's running shoes will help you find your flow. A seamless FORGEDMESH upper gives them a sock-like fit, and a BOUNCE™ midsole delivers flexible cushioning for enhanced comfort and long-distance support.."
-
   },
   {
     "shoeID": 3,
-    "shoeCategory":"WOMEN",
-    "shoeName":"SUPERSTAR BOOST SHOES",
-    "shoeImage":"shoes/adidas_woman.jpg",
-    "shoePrice":"79",
-    "shoeBrand":"ADIDAS",
-    "shoeArticle": "Launched in 1970 as a revolutionary basketball performance style, the adidas Superstar shoe was the sport's first all-leather sneaker. In '80s New York City, hip-hop heroes lifted a pair up on stage and dedicated a song to them. A legend was born. As fresh as ever, this modern version of the adidas Superstar shoe has the energy-returning feel of boost™. The women's shoes get the royal treatment with a super-shiny metallic upper. Finished with the famous rubber shell toe and herringbone-pattern tread."
-
+    "shoeCategory": "WOMEN",
+    "shoeName": "SUPERSTAR BOOST SHOES",
+    "shoeImage": "shoes/adidas_woman.jpg",
+    "shoePrice": "79",
+    "shoeBrand": "ADIDAS",
+    "shoeArticle": "Launched in 1970 as a revolutionary basketball performance style, the adidas Superstar shoe was the sport's first all-leather sneaker. In '80s New York City, hip-hop heroes lifted a pair up on stage and dedicated a song to them. A legend was born. As fresh as ever, this modern version of the adidas Superstar shoe has the energy-returning feel of boost™. The women's shoes get the royal treatment with a super-shiny metallic upper. Finished with the famous rubber shell toe and herringbone-pattern tread.",
+    "shoeType": "SPORTS"
   },
   {
     "shoeID": 4,
-    "shoeCategory":"KIDS",
-    "shoeName":"420 New Balance",
-    "shoeImage":"shoes/newBalance_kids.jpg",
-    "shoePrice":"59",
-    "shoeBrand":"NEW BALANCE",
+    "shoeCategory": "KIDS",
+    "shoeName": "420 New Balance",
+    "shoeImage": "shoes/newBalance_kids.jpg",
+    "shoePrice": "59",
+    "shoeBrand": "NEW BALANCE",
     "shoeArticle": "The classic 420 gets a modern revision perfect for the moment you realize cute is no longer cool. A durable mesh/synthetic upper and a comfortable outsole ensure your child is ready for anything. Plus, sneaker has a sporty style with a sleek fit easily making it their go-to shoe no matter the adventure."
-
   },
   {
     "shoeID": 5,
-    "shoeCategory":"MEN",
-    "shoeName":"New Balance 2040v3 Leather",
-    "shoeImage":"shoes/newBalance_men.jpg",
-    "shoePrice":"89",
-    "shoeBrand":"NEW BALANCE",
-    "shoeArticle": "You’re out there, day after day, working hard to put in the miles. Reward yourself with the pinnacle running experience. The New Balance 2040v3 neutral running shoe for men combines the finest American-made Horween® leather with plush cushioning for a feel so comfortable, and a look so luxurious, you’ll want to wear it everyday."
-
+    "shoeCategory": "MEN",
+    "shoeName": "New Balance 2040v3 Leather",
+    "shoeImage": "shoes/newBalance_men.jpg",
+    "shoePrice": "89",
+    "shoeBrand": "NEW BALANCE",
+    "shoeArticle": "You’re out there, day after day, working hard to put in the miles. Reward yourself with the pinnacle running experience. The New Balance 2040v3 neutral running shoe for men combines the finest American-made Horween® leather with plush cushioning for a feel so comfortable, and a look so luxurious, you’ll want to wear it everyday.",
+    "shoeType": "SPORTS"
   },
   {
     "shoeID": 6,
-    "shoeCategory":"WOMEN",
-    "shoeName":"Vazee Rush",
-    "shoeImage":"shoes/newBalance_women.jpg",
-    "shoePrice":"84",
-    "shoeBrand":"NIKE",
+    "shoeCategory": "WOMEN",
+    "shoeName": "Vazee Rush",
+    "shoeImage": "shoes/newBalance_women.jpg",
+    "shoePrice": "84",
+    "shoeBrand": "NIKE",
     "shoeArticle": "Slip on and go. Taking design cues from the Vazee running shoe, the Vazee Rush was built for comfort with its lightweight and sporty slip-on design. This casual everyday sneaker features a comfortable REVlite midsole and a stretch collar for easy wear. Plus, its smooth leather-like strap adds a touch of sophistication to your relaxed look."
-
   },
   {
     "shoeID": 7,
-    "shoeCategory":"KIDS",
-    "shoeName":"NIKE AIR ZOOM PEGASUS 33",
-    "shoeImage":"shoes/nike_kids.jpg",
-    "shoePrice":"39",
-    "shoeBrand":"NIKE",
+    "shoeCategory": "KIDS",
+    "shoeName": "NIKE AIR ZOOM PEGASUS 33",
+    "shoeImage": "shoes/nike_kids.jpg",
+    "shoePrice": "39",
+    "shoeBrand": "NIKE",
     "shoeArticle": "The Nike Air Zoom Pegasus 33 Younger/Older Kids' Running Shoe combines a classic look with responsive cushioning and a locked-down fit to help you stay quick and comfortable during everyday runs or demanding races."
-
   },
   {
     "shoeID": 8,
-    "shoeCategory":"KIDS",
-    "shoeName":"NIKE AIR MAX 2017",
-    "shoeImage":"shoes/nike_kids2.jpg",
-    "shoePrice":"44",
-    "shoeBrand":"NIKE",
-    "shoeArticle": "The Nike Air Max 2017 Older Kids' Running Shoe features a breathable mesh upper and soft cushioning for superb comfort from track training to the playground."
-
+    "shoeCategory": "KIDS",
+    "shoeName": "NIKE AIR MAX 2017",
+    "shoeImage": "shoes/nike_kids2.jpg",
+    "shoePrice": "44",
+    "shoeBrand": "NIKE",
+    "shoeArticle": "The Nike Air Max 2017 Older Kids' Running Shoe features a breathable mesh upper and soft cushioning for superb comfort from track training to the playground.",
+    "shoeType": "SPORTS"
   },
   {
     "shoeID": 9,
-    "shoeCategory":"MEN",
-    "shoeName":"NIKE SB ZOOM BLAZER LOW AC ",
-    "shoeImage":"shoes/nike_men.jpg",
-    "shoePrice":"69",
-    "shoeBrand":"NIKE",
+    "shoeCategory": "MEN",
+    "shoeName": "NIKE SB ZOOM BLAZER LOW AC ",
+    "shoeImage": "shoes/nike_men.jpg",
+    "shoePrice": "69",
+    "shoeBrand": "NIKE",
     "shoeArticle": "The Nike SB Zoom Blazer Low AC 'Numbers' Men's Skateboarding Shoe continues a collaboration with newly launched skate brand Numbers, the brainchild of legendary pros Eric Koston and Guy Mariano. With its luxe suede and trio of hook-and-loop straps, this limited edition brings a bold look to the session—or wherever the session takes you."
   },
   {
     "shoeID": 10,
-    "shoeCategory":"WOMEN",
-    "shoeName":"NIKE AIR MAX 2017",
-    "shoeImage":"shoes/nike_women.jpg",
-    "shoePrice":"88",
-    "shoeBrand":"NIKE",
+    "shoeCategory": "WOMEN",
+    "shoeName": "NIKE AIR MAX 2017",
+    "shoeImage": "shoes/nike_women.jpg",
+    "shoePrice": "88",
+    "shoeBrand": "NIKE",
     "shoeArticle": "Seamlessly designed with support and breathability right where you need it, the Nike Air Max 2017 Women's Running Shoe features a Flymesh upper combined with the plush cushioning of a full-length Max Air unit."
   },
   {
     "shoeID": 11,
-    "shoeCategory":"KIDS",
-    "shoeName":"SUEDE JR SNEAKERS",
-    "shoeImage":"shoes/puma_kids.jpg",
-    "shoePrice":"34",
-    "shoeBrand":"PUMA",
-    "shoeArticle": "Born in 1968, the Suede was a warm-up shoe made infamous by athletic greats such as basketball's Walt Clyde Frazier and the track's Tommie Smith. It hit new levels of fame during the '80s dawn of b-boys and hip hop beats, and, to this day, it remains PUMA's most epic icon of sport-inspired style with its smooth suede and streetwise swagger. Here, it's shrunk down for young legends in the making."
+    "shoeCategory": "KIDS",
+    "shoeName": "SUEDE JR SNEAKERS",
+    "shoeImage": "shoes/puma_kids.jpg",
+    "shoePrice": "34",
+    "shoeBrand": "PUMA",
+    "shoeArticle": "Born in 1968, the Suede was a warm-up shoe made infamous by athletic greats such as basketball's Walt Clyde Frazier and the track's Tommie Smith. It hit new levels of fame during the '80s dawn of b-boys and hip hop beats, and, to this day, it remains PUMA's most epic icon of sport-inspired style with its smooth suede and streetwise swagger. Here, it's shrunk down for young legends in the making.",
+    "shoeType": "SPORTS"
   },
   {
     "shoeID": 12,
-    "shoeCategory":"MEN",
-    "shoeName":"IGNITE 3 PWRCOOL MEN’S RUNNING SHOES",
-    "shoeImage":"shoes/puma_man2.jpg",
-    "shoePrice":"99",
-    "shoeBrand":"PUMA",
+    "shoeCategory": "MEN",
+    "shoeName": "IGNITE 3 PWRCOOL MEN’S RUNNING SHOES",
+    "shoeImage": "shoes/puma_man2.jpg",
+    "shoePrice": "99",
+    "shoeBrand": "PUMA",
     "shoeArticle": "Feel cooler and run faster in the all-new IGNITE 3 PWRCOOL. This cushioning shoe offers supreme energy return and breathability to make your runs even more fun and comfortable. The upper is equipped with open, deconstructed, super breathable mesh upper for ultimate airflow, combined with a TPU heel piece that will lock your foot perfectly onto the platform. With a faster Chevron design and a lightweight feel, the shoe's tooling delivers an increased energy return for an even smoother ride on hot summer days."
   },
   {
     "shoeID": 13,
-    "shoeCategory":"MEN",
-    "shoeName":"IGNITE LIMITLESS REPTILE ",
-    "shoeImage":"shoes/puma_men.jpg",
-    "shoePrice":"79",
-    "shoeBrand":"PUMA",
+    "shoeCategory": "MEN",
+    "shoeName": "IGNITE LIMITLESS REPTILE ",
+    "shoeImage": "shoes/puma_men.jpg",
+    "shoePrice": "79",
+    "shoeBrand": "PUMA",
     "shoeArticle": "The IGNITE Limitless is our new take on the running shoe. This luxurious Reptile version fuses highly technical running features with the design mentality and attitude of modern streetwear. This model provides premium cushioning and energy return with full-length IGNITE Foam embedded in the midsole. Luxe detailing, bold branding and aggressive dimensions make this style a true game-changer."
   },
   {
     "shoeID": 14,
-    "shoeCategory":"WOMEN",
-    "shoeName":"BASKET HEART DENIM WOMEN’S SNEAKERS",
-    "shoeImage":"shoes/puma_women.jpg",
-    "shoePrice":"59",
-    "shoeBrand":"PUMA",
-    "shoeArticle": "In the '60s, the Basket was one of several PUMA warm-up shoes to declare a new era on the basketball court. A bona fide brother of the PUMA Suede, it rapidly moved its way up the style roster by opting for allover leather. The Basket scored through many a practice round and pick up game and was later adopted by the hip hop scene – turning those swift basket dunks to funky funk beats and transforming an everyday court classic into the most debonair of pop culture legends. The Basket Heart Denim gives the court classic a feminine look with its oversized laces and a denim-inspired textile upper."
+    "shoeCategory": "WOMEN",
+    "shoeName": "BASKET HEART DENIM WOMEN’S SNEAKERS",
+    "shoeImage": "shoes/puma_women.jpg",
+    "shoePrice": "59",
+    "shoeBrand": "PUMA",
+    "shoeArticle": "In the '60s, the Basket was one of several PUMA warm-up shoes to declare a new era on the basketball court. A bona fide brother of the PUMA Suede, it rapidly moved its way up the style roster by opting for allover leather. The Basket scored through many a practice round and pick up game and was later adopted by the hip hop scene – turning those swift basket dunks to funky funk beats and transforming an everyday court classic into the most debonair of pop culture legends. The Basket Heart Denim gives the court classic a feminine look with its oversized laces and a denim-inspired textile upper.",
+    "shoeType": "SPORTS"
   }
-
-  ]
+]
