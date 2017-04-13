@@ -1,11 +1,13 @@
 <div ng-controller="homeController">
     <section>
+
         <div class="FEATURED_PRODUCTS">FEATURED PRODUCTS</div>
         <div class="Layer_2"></div>
 
-    </section>
+        <div id="left">
+     <div class="shoesContainer" ng-repeat="shoe in shoes | filter:searchText|orderBy:sortShoes">
     <ul class="ShoesListUl">
-        <li><img src="images/pinkshoe.png"/>
+        <li><img src="images/{{shoe.shoeImage}}" alt="{{shoe.shoeName}}" height="200" />
             <hr>
             <div>{{shoe.shoeName}}</br><span>{{shoe.shoeBrand}}</span></br>
                 <p>{{shoe.shoeArticle}}</P>
@@ -13,6 +15,9 @@
             </div>
         </li>
     </ul>
+         </div>
+        </div>
+    </section>
     <aside>
 
         <input type="text" class="Rectangle_4_copy search SEARCH" placeholder="SEARCH" ng-model="searchText.shoeName"/>

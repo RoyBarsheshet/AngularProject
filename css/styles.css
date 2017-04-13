@@ -608,13 +608,26 @@ input:checked{
     height: 1px;
     z-index: 42;
 }
-.ShoesListUl {
-    position: absolute;
-    left: 76px;
-    top: 668px;
-}
+
+
 li{
     width: 266px;
+}
+#left{
+    float:left;
+    width:1040px;
+}
+/******************************homePage products******************/
+.shoesContainer{
+    border: 2px grey;
+    border-style:dotted;
+    float: left;
+    margin: 10px 10px;
+    padding:10px;
+    width:300px;
+}
+.shoesContainer img{
+    width: 200px;
 }
     /*****************************footer************************/
 .Rectangle_6 {

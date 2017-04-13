@@ -94,7 +94,7 @@
     "shoeID": 9,
     "shoeCategory":"MEN",
     "shoeName":"NIKE SB ZOOM BLAZER LOW AC ",
-    "shoeImage":"shoe/nike_men.jpg",
+    "shoeImage":"shoes/nike_men.jpg",
     "shoePrice":"69",
     "shoeBrand":"NIKE",
     "shoeArticle": "The Nike SB Zoom Blazer Low AC 'Numbers' Men's Skateboarding Shoe continues a collaboration with newly launched skate brand Numbers, the brainchild of legendary pros Eric Koston and Guy Mariano. With its luxe suede and trio of hook-and-loop straps, this limited edition brings a bold look to the session—or wherever the session takes you."
@@ -103,7 +103,7 @@
     "shoeID": 10,
     "shoeCategory":"WOMEN",
     "shoeName":"NIKE AIR MAX 2017",
-    "shoeImage":"shoe/nike_women.jpg",
+    "shoeImage":"shoes/nike_women.jpg",
     "shoePrice":"88",
     "shoeBrand":"NIKE",
     "shoeArticle": "Seamlessly designed with support and breathability right where you need it, the Nike Air Max 2017 Women's Running Shoe features a Flymesh upper combined with the plush cushioning of a full-length Max Air unit."

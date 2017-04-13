@@ -40,6 +40,7 @@ var  shoeApp = angular.module("shoeModule", ["ngRoute"])
     //         angular.element(event.target).parent().addClass("active");
     //     };
 var links = document.querySelectorAll('#nav a');
+
 for (var x = 0; x < links.length; x++) {
     links[x].className = "";
     console.log(links[1]);
