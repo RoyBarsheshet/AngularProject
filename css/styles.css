@@ -17,7 +17,7 @@ body{
 .body_resize {
     /*padding:0 20px 0 20px;*/
     width:100%;
-    background:#fff;
+    background:rgb(241, 241, 241);
     min-height:100%;
     height: 100%;
 
@@ -105,13 +105,12 @@ text-decoration: none;
 
 #nav a:hover{
     color: rgb(212, 172, 113);
-    font-weight: bold;
-    transition: all .2s ease-in-out;
-    font-size: 26px;
+
+
 }
 #nav a.active{
     color: rgb(212, 172, 113);
-    font-weight: bold;
+
 
 }
 
@@ -155,8 +154,53 @@ text-decoration: none;
     height: 52px;
     z-index: 127;
 }
-
-
+/* Underline From Center */
+#nav a {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    overflow: hidden;
+}
+#nav a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: red;
+    height: 1px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+#nav a:hover:before, #nav a:focus:before, #nav a:active:before {
+    left: 0;
+    right: 0;
+}
+/* Grow Shadow */
+.hvr-grow-shadow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    /*-webkit-transform: scale(1.1);*/
+    /*transform: scale(1.1);*/
+}
 /******************************slider******************/
 .Group_2 {
     height: 500px;
@@ -657,7 +701,7 @@ p {
 }
 .home-btn{
 
-    border: 1px solid red;
+    border: 1px solid #E71836;
     text-decoration: none;
     color:white;
 
@@ -667,33 +711,34 @@ p {
     transition: 0.5s all ease-in-out;
     text-align: center;
 
-    border-radius: 7px;
-    background-color: rgb(237, 28, 36);
+
+    background-color: #E71836;
     width: 150px;
     height: 44px;
     cursor: pointer;
 }
 .home-btn a{
     color:white;
-    font-size: 16pt;
+    font-size: 17px;
     text-decoration:none;
-    font-weight:bold;
+
     font-family: Myriad Pro, serif;
 
 }
 .home-btn:hover ,.home-btn:focus{
     box-shadow: 0 0 2px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.24);
-    transition: all .3s;
+    border-radius: 40px;
+    font-weight: bold;
 }
 .tell-me-more{
-    font-size: 14px;
-    font-family: "Proxima Nova", serif;
+    font-size: 17px;
+    font-family: Myriad Pro, serif;
     color: rgb(255, 255, 255);
-    line-height: 1.714;
+    line-height: 2.2;
     z-index: 120;
-    font-weight: bold;
+
     /*cursor: pointer;*/
-    position: relative;
+    /*position: relative;*/
     left: 14px;
 }
 .pArticle{
@@ -727,7 +772,7 @@ width: 235px;
     font-size: 24px;
     font-family: "Proxima Nova";
     color: rgb(237, 28, 36);
-    padding-right: 31px;
+    padding-right: 23px;
 
 }
 .shoeImag{
@@ -781,6 +826,7 @@ width: 235px;
     height: inherit;
     margin-top:20px;
     float: right;
+    margin: 9px;
 }
 fieldset{
     margin-top: 20px;
@@ -1085,6 +1131,7 @@ table.mz_dataTbl tr.mz_discontinueFlag td a {
 #mz_form fieldset label,#mz_form fieldset input,#mz_form fieldset select,#mz_form fieldset textarea {
     display: block;
     text-align: left;
+    padding-right: 9px;
 }
 #inputCheckRadio {
     border: none;
@@ -1114,8 +1161,7 @@ fieldset{
 .Rectangle_6 {
     background-color: rgb(59, 4, 1);
     position: absolute;
-
-    top: 1000%;
+    bottom: -2761px;
     width: 100%;
     height: 175px;
     z-index: 139;
