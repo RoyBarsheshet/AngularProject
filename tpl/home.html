@@ -5,24 +5,26 @@
         <div class="Layer_2"></div>
 
         <div id="left">
-     <div class="shoesContainer" ng-repeat="shoe in shoes | filter:searchText|orderBy:sortShoes">
-    <ul class="ShoesListUl">
-        <li><img src="images/{{shoe.shoeImage}}" alt="{{shoe.shoeName}}" height="200" />
-            <hr>
-            <h3 style="height: 50px;">{{shoe.shoeName}}
-                <h3>{{shoe.shoeBrand}}</h3>
-                <h4>{{shoe.shoeCategory}}</h4>
-                <!--<h4>{{shoe.shoeArticle}}</h4></br>-->
-                <h4 class="price">${{shoe.shoePrice}}
-                <!--<p class="price">${{shoe.shoePrice}}<span class="sPrice">{{shoe.shoeSPrice}}</span></p><br>-->
-                    <p class="home-btn"><a class="tell-me-more" href="#!/shoe/{{shoe.shoeID}}">Tell me More</a></p></h4>
-            </h3>
-        </li>
-    </ul>
-         </div>
+            <div class="shoesContainer" ng-repeat="shoe in shoes | filter:searchText|orderBy:sortShoes">
+                <ul class="ShoesListUl">
+                    <li><img class="shoeImag" src="images/{{shoe.shoeImage}}" alt="{{shoe.shoeImage}}"/>
+                        <hr>
+                        <h3 class="Sample_Item_Title">{{shoe.shoeName}}
+                            <h3 class="NIKE">{{shoe.shoeBrand}}</h3>
+                            <h4>{{shoe.shoeCategory}}</h4></h3>
+                        </br>
+                        <!--<h4>{{shoe.shoeArticle}}</h4></br>-->
+                        <h4 class="_99_99">${{shoe.shoePrice}}</h4>
+                        <!--<p class="price">${{shoe.shoePrice}}<span class="sPrice">{{shoe.shoeSPrice}}</span></p><br>-->
+                        <p class="home-btn"><a class="tell-me-more" href="#!/shoe/{{shoe.shoeID}}">Tell me More</a></p>
+                        </h3>
+
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
-    <aside>
+    <aside style="position: relative;right: -21px;">
 
         <input type="text" class="Rectangle_4_copy search SEARCH" placeholder="SEARCH" ng-model="searchText.shoeBrand"/>
 
@@ -35,7 +37,7 @@
         <div class="Layer_6"></div>
         <input type="checkbox" class="unopen-cattegorys" ng-model="MEN" ng-click="filterCategories()"/>
         <input type="checkbox" class="unopen-cattegorys1" ng-model="WOMEN" ng-click="filterCategories()"/>
-        <input type="checkbox" class="unopen-cattegorys2"  ng-model="KIDS" ng-click="filterCategories()"/>
+        <input type="checkbox" class="unopen-cattegorys2" ng-model="KIDS" ng-click="filterCategories()"/>
         <input type="checkbox" class="unopen-cattegorys3" ng-model="SPORTS" ng-click="filterCategories()"/>
 
 

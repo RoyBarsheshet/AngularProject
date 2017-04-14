@@ -9,13 +9,17 @@ html body {
 li{
     list-style-type: none;
 }
+body{
+    background-color: rgb(216, 216, 216);
 
+}
 
 .body_resize {
-    padding:0 20px 0 20px;
-    width:892px;
+    /*padding:0 20px 0 20px;*/
+    width:100%;
     background:#fff;
     min-height:100%;
+    height: 100%;
 
 }
 .Rectangle_5 {
@@ -28,15 +32,15 @@ li{
     z-index: 3;
 }
 
-.GRID {
-    background-color: rgb(241, 241, 241);
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    min-height:100%;
-    z-index: 138;
-}
+/*.GRID {*/
+    /*background-color: rgb(241, 241, 241);*/
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    /*width: 100%;*/
+    /*min-height:100%;*/
+    /*z-index: 138;*/
+/*}*/
 .Layer_109_copy {
     /*background-image: url("/images/Layer_10_ copy.png");*/
     opacity: 0.471;
@@ -202,7 +206,7 @@ text-decoration: none;
     cursor: pointer;
 }
 .Rectangle_2 {
-    /*background-color: rgb(216, 216, 216);*/
+    background-color: rgb(216, 216, 216);
     position: absolute;
     top: 49px;
     width: 100%;
@@ -214,7 +218,7 @@ text-decoration: none;
     color: rgb(0, 0, 0);
     line-height: 1.375;
     position: absolute;
-    left: 877px;
+    left: 960px;
     top: 92.45px;
     width: 566px;
     height: 174px;
@@ -232,7 +236,7 @@ text-decoration: none;
     border-radius: 9px;
     background-color: rgb(237, 28, 36);
     position: absolute;
-    left: 877px;
+    left: 960px;
     top: 284px;
     width: 150px;
     height: 49px;
@@ -249,7 +253,7 @@ text-decoration: none;
     color: rgb(255, 255, 255);
     line-height: 1.714;
     position: absolute;
-    left: 893px;
+    left: 979px;
     top: 297px;
     z-index: 120;
     font-weight: bold;
@@ -633,7 +637,7 @@ li{
     /*border-style:dotted;*/
     float: left;
     width:272px;
-    height: 550px;
+    height: 500px;
     text-overflow: clip;
     overflow: hidden;
 }
@@ -663,7 +667,7 @@ p {
     transition: 0.5s all ease-in-out;
     text-align: center;
 
-    border-radius: 9px;
+    border-radius: 7px;
     background-color: rgb(237, 28, 36);
     width: 150px;
     height: 44px;
@@ -702,12 +706,416 @@ h2 h3 h4 p{
     margin: 0;
     padding: 0;
 }
+h4{
+    display: inline;
+}
+.NIKE {
+    font-size: 18px;
+    font-family: "Myriad Pro",fantasy;
+    color: rgb(57, 57, 57);
+
+}
+.Sample_Item_Title {
+    font-size: 18px;
+    font-family: "lato";
+    color: rgb(57, 57, 57);
+    height: 50px;
+width: 235px;
+
+}
+._99_99 {
+    font-size: 24px;
+    font-family: "Proxima Nova";
+    color: rgb(237, 28, 36);
+    padding-right: 31px;
+
+}
+.shoeImag{
+    height: 200px;
+}
+/**************************about*******************************/
+#about{
+
+    width:960px;
+    position: relative;
+    top:678px;
+    left:115px;
+    border-radius: 35px;
+    background-color: white;
+}
+/**************************contact us*******************************/
+#contact{
+
+    width:1104px;
+    position: relative;
+    top:678px;
+    left:115px;
+    border-radius: 35px;
+    background-color: white;
+    padding: 15px;
+}
+.Contact {
+    font-size: 24px;
+    font-family: "Proxima Nova", serif;
+    color: rgb(0, 0, 0);
+    line-height: 2.063;
+    position: absolute;
+    left: 146px;
+    top: 615.244px;
+    z-index: 41;
+    font-weight: bold;
+}
+.Contact_2 {
+    background-image: url("../images/Layer_2.png");
+    position: absolute;
+    left: 115px;
+    top: 666px;
+    width: 960px;
+    height: 1px;
+    z-index: 42;
+}
+.mz_genericWidget{
+    text-align: center;
+}
+.submit{
+    height: inherit;
+    margin-top:20px;
+    float: right;
+}
+fieldset{
+    margin-top: 20px;
+    text-align: right;
+}
+fieldset label{
+    font-size: 18px;
+    font-family: "Myriad Pro",fantasy;
+    color: rgb(57, 57, 57);
+
+}
+
+div.mz_productFinder h3 {
+    font-size: 110%;
+    float: left;
+    padding: 25px 2% 0 2%;
+    text-align: right;
+    width: 21%
+}
+
+div.mz_productFinder fieldset {
+    float: left;
+    overflow: hidden;
+    padding: 10px 0;
+    text-align: left;
+    width: 75%
+}
+
+div.mz_productFinder fieldset fieldset {
+    margin-right: 2%;
+    padding: 0;
+    float: left;
+    width: 25%
+}
+
+div.mz_productFinder fieldset label {
+    display: block;
+    font-size: 90%;
+    margin-bottom: 3px;
+    font-weight: bold
+}
+
+div.mz_productFinder fieldset select {
+    border: 1px solid #b2b2b2;
+    font-size: 125%;
+    padding: 2px 2%;
+    width: 94%
+}
+
+div.mz_productFinder fieldset a {
+    color: #fff;
+    font-size: 110%;
+    font-weight: bold;
+    float: left;
+    margin-top: 7px;
+    padding: 10px 1.5%;
+    text-align: center;
+    width: 12%
+}
+
+div.mz_productFinder fieldset a:link,div.mz_productFinder fieldset a:visited {
+    background-color: #666;
+    text-decoration: none
+}
+
+div.mz_productFinder fieldset a:hover,div.mz_productFinder fieldset a:active {
+    background-color: #000
+}
+
+table.mz_dataTbl,.mz_genericContent table {
+    border-bottom: 1px solid #b2b2b2;
+    margin: 10px 0;
+    width: 100%
+}
+
+table.mz_dataTbl tr td,.mz_genericContent table tr td {
+    background-color: #fff;
+    border-top: 1px solid #efefef;
+    padding: 5px 10px
+}
+
+table.mz_dataTbl tr th,.mz_genericContent table tr th,table.mz_listTbl tr th {
+    background-color: #efefef;
+    border-top: 1px solid #b2b2b2;
+    border-bottom: 1px solid #b2b2b2;
+    font-size: 110%;
+    padding: 10px;
+    text-align: left
+}
+
+table.mz_dataTbl .mz_btnPrimary {
+    display: block;
+    float: none;
+    font-size: 100%;
+    height: 15px;
+    padding: 5px 0;
+    width: 130px
+}
+
+table.mz_dataTbl tr:nth-child(odd) td,.mz_genericContent table tr:nth-child(odd) td {
+    background-color: #fdfdfd
+}
+
+table.mz_dataTbl tr.mz_alt_rowB td {
+    border-top: none;
+    padding: 0 10px 5px 10px
+}
+
+table.mz_dataTbl tr.mz_subhead_row td {
+    font-size: 85%;
+    font-weight: bold;
+    text-transform: uppercase
+}
+
+table.mz_dataTbl tr.mz_addon_row td {
+    font-size: 85%
+}
+
+table.mz_dataTbl input {
+    border: 1px solid #b2b2b2;
+    width: 60px
+}
+
+table.mz_dataTbl select {
+    width: 100px
+}
+
+table.mz_dataTbl img {
+    display: block
+}
+
+table.mz_dataTbl input.mz_tblLink_tiny,table.mz_dataTbl a.mz_tblLink_tiny,table.mz_dataTbl a.wishlist-add-single {
+    display: block;
+    font-size: 75%;
+    margin: 5px 0 10px 0;
+    padding: 5px 0;
+    text-transform: uppercase;
+    width: 100%
+}
+
+table.mz_dataTbl input.mz_tblLink_tiny {
+    background-color: #efefef;
+    border: 1px solid #dfdfdf;
+    font-family: Arial,Helvetica,sans-serif;
+    text-align: center
+}
+
+table.mz_dataTbl a.mz_tblLink_tiny {
+    text-decoration: underline
+}
+
+table.mz_dataTbl input.mz_tblLink_tiny:hover {
+    border: 1px solid #999
+}
+
+table.mz_dataTbl input.inputCheckRadio {
+    border: none;
+    display: inline-block;
+    width: auto
+}
+
+table.mz_dataTbl a.mz_btnSecondary {
+    margin-left: 0
+}
+
+table.mz_dataTbl a.wishlist-add-single {
+    color: #fff;
+    text-align: center;
+    text-decoration: none
+}
+
+table.mz_dataTbl a.wishlist-add-single:link,table.mz_dataTbl a.wishlist-add-single:visited {
+    background-color: #666
+}
+
+table.mz_dataTbl a.wishlist-add-single:hover,table.mz_dataTbl a.wishlist-add-single:active {
+    background-color: #000
+}
+
+table.mz_dataTbl span {
+    font-weight: bold
+}
+
+table.mz_dataTbl span.mz_prevPrice {
+    color: #999;
+    font-weight: normal;
+    text-decoration: line-through
+}
+
+table.mz_dataTbl strong.mz_salePrice {
+}
+
+table.mz_dataTbl tr.tbl_neutralMsg td {
+    background-color: #f9f9f9;
+    padding: 15px 10px
+}
+
+table.mz_dataTbl tr.tbl_errorMsg td {
+    background-color: #ffe5e5;
+    padding: 15px 10px
+}
+
+table.mz_dataTbl tr.tbl_successMsg td {
+    background-color: #edfde3;
+    padding: 15px 10px
+}
+
+table.mz_dataTbl tr.tbl_neutralMsg td p,table.mz_dataTbl tr.tbl_errorMsg td p,table.mz_dataTbl tr.tbl_successMsg td p {
+    font-size: 110%;
+    font-weight: bold;
+    text-align: center
+}
+
+table.mz_dataTbl tr.tbl_errorMsg td p {
+    color: #c00
+}
+
+table.mz_dataTbl tr.tbl_successMsg td p {
+    color: #390
+}
+
+table.mz_dataTbl tr.mz_discontinue_row td {
+    opacity: .3
+}
+
+table.mz_dataTbl tr.mz_discontinue_row input.mz_tblLink_tiny:hover {
+    border: 1px solid #dfdfdf
+}
+
+table.mz_dataTbl tr.mz_discontinue_row a,table.mz_dataTbl tr.mz_discontinue_row a:hover {
+    cursor: default;
+    text-decoration: none
+}
+
+table.mz_dataTbl tr.mz_discontinueFlag td {
+    background-color: #999;
+    color: #fff;
+    font-size: 100%;
+    line-height: 1.2;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase
+}
+
+table.mz_dataTbl tr.mz_discontinueFlag td a {
+    color: #fff;
+    font-weight: bold
+}
+
+.mz_instockMsg {
+    color: #093
+}
+
+.mz_lowstockMsg {
+    color: #f90
+}
+
+.mz_nostockMsg {
+    color: #600
+}
+
+.mz_disstockMsg {
+    color: #999
+}
+
+#mz_form {
+    overflow: hidden;
+    padding: 10px 0 0 0
+}
+
+#mz_form h3 {
+    border-top: 1px solid #efefef;
+    clear: both;
+    font-size: 130%;
+    font-weight: normal;
+    margin: 10px 0 15px 0;
+    padding: 5px 0 0 10px
+}
+
+#mz_form h3 span {
+    color: #999
+}
+
+#mz_form fieldset {
+    overflow: hidden;
+    padding: 5px 0;
+
+}
+
+#mz_form fieldset input,#mz_form fieldset select,#mz_form fieldset textarea,#mz_form fieldset label {
+    font-size: 110%
+}
+
+#mz_form fieldset input,#mz_form fieldset select,#mz_form fieldset textarea {
+    margin: 15px;
+    color: #5f5f5f;
+    font-family: Arial,Helvetica,sans-serif;
+    padding: .3em 3px;
+    width: 300px
+}
+
+#mz_form fieldset label,#mz_form fieldset input,#mz_form fieldset select,#mz_form fieldset textarea {
+    display: block;
+    text-align: left;
+}
+#inputCheckRadio {
+    border: none;
+    display: inline-block;
+
+float: right;
+    vertical-align: middle;
+    transform: translate(0, 10px);
+
+}
+#inputCheckRadio2 {
+    border: none;
+    display: inline-block;
+    width: auto
+}
+.CheckRadio{
+    float: right;
+    width: 10px !important;
+}
+fieldset{
+    border: none;
+}
+.hr{
+    border-top: dashed 1px red;
+}
     /*****************************footer************************/
 .Rectangle_6 {
     background-color: rgb(59, 4, 1);
     position: absolute;
 
-    top: 1550px;
+    top: 1000%;
     width: 100%;
     height: 175px;
     z-index: 139;

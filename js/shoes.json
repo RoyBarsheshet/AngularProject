@@ -1,15 +1,5 @@
 [
   {
-    "compilerOptions": {
-      "module": "commonjs",
-      "target": "es5",
-      "sourceMap": true
-    },
-    "exclude": [
-      "node_modules"
-    ]
-  },
-  {
     "shoeID": 1,
     "shoeCategory": "KIDS",
     "shoeName": "ADIZERO 5-STAR 6.0 CLEATS",
