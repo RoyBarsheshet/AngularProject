@@ -1,1 +1,27 @@
-<div ng-controller="productController"></div>
+    <div id="left" ng-controller="homeController">
+        <p class="home-btn hvr-grow-shadow" style="position: relative;left: 640px ;top: -13px;">
+            <a class="submit back"  href="#!/home">Back to Search</a></p>
+
+
+        <div class="shoesContainer">
+        <ul class="ShoesListUl">
+            <li><img class="shoeImag" ng-src="images/{{shoe.shoeImage}}" alt="{{shoe.shoeImage}}"/>
+                <hr>
+                <h3 class="Sample_Item_Title">{{shoe.shoeName}}
+                    <h3 class="NIKE">{{shoe.shoeBrand}}</h3>
+                    <h4>{{shoe.shoeCategory}}</h4></h3>
+                <p class="pArticle">{{shoe.shoeArticle}}</p><br>
+                </br>
+                <h4 class="_99_99">${{shoe.shoePrice}}</h4>
+                <p class="home-btn hvr-grow-shadow"><a class="tell-me-more" href="#!/product/{{shoe.shoeID}}">Tell
+                    me More</a></p>
+                </h3>
+
+            </li>
+        </ul>
+    </div>
+        <br>
+        </div>
+    </div>
+
+

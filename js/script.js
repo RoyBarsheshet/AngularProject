@@ -20,7 +20,7 @@ var  shoeApp = angular.module("shoeModule", ["ngRoute"])
                    controller:"contactUsController",
                    pageTitle:"Contact US"
                })
-           .when("/product",
+           .when("/product/:shoeID",
                {
                    templateUrl:"tpl/product.html",
                    controller:"productController",
@@ -43,9 +43,9 @@ var links = document.querySelectorAll('#nav a');
 
 for (var x = 0; x < links.length; x++) {
     links[x].className = "";
-    console.log(links[1]);
+    // console.log(links[1]);
 }
-console.log(event);
+// console.log(event);
 angular.element(event.target).addClass("active");
 };
 
@@ -128,28 +128,28 @@ angular.element(event.target).addClass("active");
         .controller("contactUsController", function ($rootScope,$route) {
             $rootScope.title = $route.current.$$route.pageTitle;
         })
-        .controller("productController", function ($rootScope, $scope, $route, $http,$routeParams) {
+        .controller("productController", function ($route, $scope, $rootScope, $http, $routeParams) {
             $http({
                 method: 'GET',
-                url: 'js/shoes.jason'
+                url: 'js/shoes.json'
             })
             .then(function successCallback(response) {
             var allShoes = response.data;
             $scope.shoes = getShoeDetails($routeParams.shoeID, allShoes);
-            $rootScope.title = $scope.shoes.bookname;
+            $rootScope.title = $scope.shoes.shoeName;
 
         }, function errorCallback (response) {
             console.log("ERROR READING FILE!!");
             });
         });
 function getShoeDetails(shoeID,allShoes) {
-    for(var x=0;x<allShoes.length; x++){
+    for(var x = 0; x < allShoes.length; x++){
         if (allShoes[x].shoeID == shoeID){
             return allShoes[x];
         }
     }
 
-}
+};
 function getCategories(shoes) {
     var categories = new Array();
 
@@ -159,12 +159,12 @@ function getCategories(shoes) {
        }
    }
    return categories;
-}
+};
 function getTypeOF(shoes) {
     var TypeOF = new Array();
 
     for(var x=0; x<shoes.length;x++){
-        if (TypeOF.indexOf(shoes[x].shoeType)=== -1){
+        if (TypeOF.indexOf(shoes[x].shoeType)== -1){
             TypeOF.push(shoes[x].shoeType);
         }
     }
