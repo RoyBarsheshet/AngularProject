@@ -606,48 +606,59 @@ input:checked{
      /*background-color: rgb(59, 4, 1);*/
      /*color: white;*/
 /*}*/
-
-.HIGH_to_LOW {
+#sort-price-links{
+    width: 200px;
+    height: 87px;
+    transform: translate(-2%,116%);
+}
+#HIGH_to_LOW {
     font-size: 18px;
     font-family: "Myriad Pro", serif;
     color: rgb(0, 0, 0);
-    line-height: 2.75;
-    margin-top: 104px;
-    margin-left: 52px;
+
+    margin-top: 9px;
+    text-align: center;
     cursor: pointer;
     display: block;
-    width: 120px;
 
 }
-.LOW_to_HIGH {
+#LOW_to_HIGH {
     font-size: 18px;
     font-family: "Myriad Pro", serif;
     color: rgb(0, 0, 0);
-    line-height: 2.75;
-    margin-top: -20px;
-    margin-left: 52px;
+
+    text-align: center;
     cursor: pointer;
     display: block;
-    width: 120px;
-}
-.HIGH_to_LOW:hover {
-    text-decoration: underline;
-    color: rgb(59, 4, 1);
-    font-weight: bold;
 
 }
-.LOW_to_HIGH:hover {
+#HIGH_to_LOW:hover {
     text-decoration: underline;
     color: rgb(59, 4, 1);
     font-weight: bold;
+    text-decoration-color: rgb(116,94,93);
+
+}
+#LOW_to_HIGH:hover {
+    text-decoration: underline;
+    color: rgb(59, 4, 1);
+    font-weight: bold;
+    text-decoration-color: rgb(116,94,93);
 }
 .addClass{
     text-decoration: underline;
     color: rgb(59, 4, 1);
     font-weight: bold;
 }
-#HtoL:active{
+.HIGH_to_visited{
     text-decoration: underline;
+    color: rgb(59, 4, 1);
+    font-weight: bold;
+    text-decoration-color: rgb(116,94,93);
+}
+#LOW_to_HIGH:visited {
+    text-decoration: underline;
+    text-decoration-color: rgb(116,94,93);
     color: rgb(59, 4, 1);
     font-weight: bold;
 }
@@ -663,6 +674,10 @@ input:checked{
     z-index: 41;
     font-weight: bold;
     padding-left: 150px;
+}
+.prod_name{
+    line-height: 0;
+    font-family: Myriad Pro;
 }
 .Layer_2 {
     background-image: url("../images/Layer_2.png");
@@ -684,9 +699,7 @@ input:checked{
 }
 
 
-li{
-    width: 266px;
-}
+
 #left{
     float:left;
     width:860px;
@@ -706,18 +719,16 @@ li{
     background-color: white;
 }
 /******************************homePage products******************/
-.shoesContainer{
-    /*border: 2px grey;*/
-    /*border-style:dotted;*/
-    float: left;
-    width:272px;
-    height: 500px;
-    text-overflow: clip;
-    overflow: hidden;
-}
-.shoesContainer img{
-    width: 200px;
-}
+/*.shoesContainer{*/
+    /*!*border: 2px grey;*!*/
+    /*!*border-style:dotted;*!*/
+    /*float: left;*/
+    /*width:100%;*/
+    /*height: 500px;*/
+    /*text-overflow: clip;*/
+    /*overflow: hidden;*/
+/*}*/
+
 p {
     display: inline-flex;
 }
@@ -772,10 +783,13 @@ p {
     left: 14px;
 }
 .pArticle{
-    float: right;
-    width:300px;
+    /*float: right;*/
+    /*width:300px;*/
     font-size:1.2em;
     padding-right:50px;
+    text-align: center;
+    width: 90%;
+    margin: 5%;
 }
 h2 h3 h4 p{
     margin: 0;
@@ -800,14 +814,17 @@ width: 235px;
 }
 ._99_99 {
     font-size: 24px;
-    font-family: "Proxima Nova";
-    color: rgb(237, 28, 36);
+    font-family: "Proxima Nova", Serif;
+    color:  #E71836;
     padding-right: 23px;
 
 }
 .shoeImag{
     height: 200px;
+    width: 200px;
+
 }
+
 /**************************about*******************************/
 #about{
 
@@ -1195,7 +1212,60 @@ fieldset{
 }
 /***********************************prodact ***********************/
 .back{
-    transform: translate(-10px,0px);
+    transform: translate(-12px,0px);
+}
+.prod{
+    float: right;
+    font-size: 24px;
+    font-family: "Proxima Nova";
+    color:  #E71836;
+    -moz-transform: matrix( 2.51790812351766,0,0,2.51790812351766,0,0);
+    -webkit-transform: matrix( 2.51790812351766,0,0,2.51790812351766,0,0);
+    -ms-transform: matrix( 2.51790812351766,0,0,2.51790812351766,0,0);
+    padding-right: 41px;
+
+}
+.ShoesListUl{
+    display: inline-flex;
+    float: left;
+}
+.hrProdc{
+   width: 850px;
+}
+.name-prod{
+    float: right;
+    transform: translate(30%,287%);
+
+    font-size: 31px;
+    line-height: 2;
+    font-family: "Helvetica Light", serif;
+    font-weight: bold;
+    margin-right: 44px;
+}
+.bre-prod{
+    display: inline;
+    font-size: 49px;
+    margin: 5%;
+}
+.catProd{
+    margin: 5%;
+}
+.prodImage{
+    height: 434px;
+    margin-left: 35px;
+    width: inherit;
+}
+#Lprod{
+    width:914px;
+    float:left;
+    position: relative;
+    top:14px;
+    left:115px;
+    border-radius: 35px;
+    background-color: white;
+}
+.layer_2_prod{
+    width: 914px;
 }
 /***********************************about*-*********************************/
 .text--p--20 {

@@ -4,8 +4,8 @@
     <title>ShoesSHOP | {{title}}</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="images/favIocn/favicon.ico" rel="icon" type="image/x-icon" />
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js"></script>
+    <link href="images/favIocn/favicon.ico" rel="icon" type="image/x-icon"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-route.min.js"></script>
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/styles.css">
@@ -15,16 +15,17 @@
     <div>
 
         <header style="background-color: rgb(216, 216, 216);">
-
+<!-----------------------------------Nav Menu-------------------------------------------------------------------->
             <nav>
                 <div><a href="#" class="SHOESSHOP">SHOES<b class="bold">SHOP</b></a></div>
                 <div class="Rectangle_1 Sub_Nav Layer_18 Layer_19">
-                <div id="container">
+                    <div id="container">
                         <div id="nav">
                             <a href="#!/home" class="active" ng-click="setActive($event)">Home</a>
                             <a href="#!/about" ng-click="setActive($event)">About</a>
                             <a href="#!/contactUs" ng-click="setActive($event)">Contact</a>
                         </div>
+                    </div>
                 </div>
             </nav>
 
@@ -32,44 +33,42 @@
 
         <section>
 
-            <!-----------------------------------banner-------------------------->
-           <article>
-            <div class="Rectangle_2">
-                <div style="background-image: url('./images/shutterstock_banner.png')" class="Group_2"></div>
-                <div class="banner-con">
-                <div class="Ellipse_3_copy_2"></div>
-                <div class="Ellipse_3_copy"></div>
-                <div class="Ellipse_3"></div>
-                <div class="Layer_20">
-                    <div class="Big_Title_Here_Lorem_ipsum_dolor_sit_amet__cons"><b>THE NEW JORDAN'S</b>
-                        </br>
-                        Discover The Air Jordan Collection Now! Find Your Style & Buy Online
+            <!-----------------------------------banner------------------------------------------------------->
+            <article>
+                <div class="Rectangle_2">
+                    <div style="background-image: url('./images/shutterstock_banner.png')" class="Group_2"></div>
+                    <div class="banner-con">
+                        <div class="Ellipse_3_copy_2"></div>
+                        <div class="Ellipse_3_copy"></div>
+                        <div class="Ellipse_3"></div>
+                        <div class="Layer_20">
+                            <div class="Big_Title_Here_Lorem_ipsum_dolor_sit_amet__cons"><b>THE NEW JORDAN'S</b>
+                                </br>
+                                Discover The Air Jordan Collection Now! Find Your Style & Buy Online
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Rounded_Rectangle_1 hvr-grow-shadow">
+                        <a href="#!/product/{{shoe.shoeID}}" class="SHOW_ME_MORE">SHOW ME MORE</a>
                     </div>
                 </div>
-                </div>
-                <div class="Rounded_Rectangle_1 hvr-grow-shadow">
-                <a href="#!/product/{{shoe.shoeID}}"  class="SHOW_ME_MORE">SHOW ME MORE</a>
-                </div>
-            </div>
-           </article>
-                    </section>
+            </article>
+        </section>
         <section>
-        <ng-view></ng-view>
-
+            <!-------------------------------- View start-------------------------------------------------->
+            <ng-view autoscroll="true"></ng-view>
+            <!-------------------------------- View end-------------------------------------------------->
         </section>
     </div>
 </div>
-            <footer class="Rectangle_6">
-                <div>
-                <span class="SHOESSHOP_copy"><a href="/"></a>SHOES<b>SHOP</b></span>
-                <span class="copyRights">&copy;</span>
-                <span class="_2017">2017</span>
-                </div>
-            </footer>
-
-
-
-
+<!--------------------------------------footer----------------------------------------------------------->
+<footer class="Rectangle_6">
+    <div>
+        <span class="SHOESSHOP_copy"><a href="/"></a>SHOES<b>SHOP</b></span>
+        <span class="copyRights">&copy;</span>
+        <span class="_2017">2017</span>
+    </div>
+</footer>
 
 
 </body>
