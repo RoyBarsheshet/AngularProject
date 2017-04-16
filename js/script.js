@@ -62,7 +62,6 @@ var shoeApp = angular.module("shoeModule", ["ngRoute"])
                 .then(function SuccessCallback(response) {
                     $scope.shoes = shoeCache = response.data;
                     $scope.categories = getCategories($scope.shoes);
-                    $scope.TypeOF = getTypeOF($scope.shoes);
                 }, function errorCallback(response) {
                     console.log("ERROR READING FILE!!!");
                 });
