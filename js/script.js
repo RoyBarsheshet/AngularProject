@@ -70,15 +70,7 @@ var shoeApp = angular.module("shoeModule", ["ngRoute"])
             $scope.sortByPrice = function (by) {
                 $scope.sortShoes = by;
                 this.clearSortPrice();
-                event.target.idName = "HtoL";
-
-            };
-            $scope.sortShoes = "+shoeName";
-
-            $scope.sortByPrice = function (by) {
-                $scope.sortShoes = by;
-                this.clearSortPrice();
-                event.target.idName = "HtoL";
+                event.target.className = "HIGH_to_visited";
 
             };
 
