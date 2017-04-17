@@ -10,7 +10,7 @@ var shoeApp = angular.module("shoeModule", ["ngRoute"])
                     })
                 .when("/about",
                     {
-                        templateUrl: "tpl/about.html",
+                        templateUrl: "tpl\About\about.html",
                         controller: "aboutController",
                         pageTitle: "About"
                     })
