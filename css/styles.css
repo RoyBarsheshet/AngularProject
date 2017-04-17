@@ -1230,12 +1230,12 @@ fieldset{
     float: left;
 }
 .hrProdc{
-   width: 850px;
+   width: 90%;
 }
 .name-prod{
     float: right;
     transform: translate(30%,287%);
-
+text-align: center;
     font-size: 31px;
     line-height: 2;
     font-family: "Helvetica Light", serif;
@@ -1254,6 +1254,7 @@ fieldset{
     height: 434px;
     margin-left: 35px;
     width: inherit;
+    margin-bottom: 20px;
 }
 #Lprod{
     width:914px;
@@ -1335,18 +1336,18 @@ transform: translate(15%);
 .Rectangle_6 {
     background-color: rgb(59, 4, 1);
     position: absolute;
-    bottom: -2970px;
+    bottom: -2650px;
     width: 100%;
     height: 175px;
     z-index: 139;
+    text-align: center;
 }
 .SHOESSHOP_copy {
     font-size: 18px;
     font-family: "Helvetica", serif;
     color: rgb(255, 255, 255);
-    line-height: 2.75;
-    position: absolute;
-    left: 603.096px;
+    line-height: 10;
+
 
     z-index: 140;
 }
@@ -1355,9 +1356,6 @@ transform: translate(15%);
     font-family: "Helvetica", serif;
     color: rgb(255, 255, 255);
     line-height: 2.75;
-    position: absolute;
-    left: 723.987px;
-
     z-index: 142;
 }
 ._2017 {
@@ -1365,8 +1363,5 @@ transform: translate(15%);
     font-family: "Helvetica", serif;
     color: rgb(255, 255, 255);
     line-height: 2.75;
-    position: absolute;
-    left: 755.443px;
-
     z-index: 141;
 }
