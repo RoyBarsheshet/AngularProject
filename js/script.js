@@ -4,25 +4,25 @@ var shoeApp = angular.module("shoeModule", ["ngRoute"])
             $routeProvider
                 .when("/home",
                     {
-                        templateUrl: "tpl/home.html",
+                        templateUrl: "tpl/home/home.html",
                         controller: "homeController",
                         pageTitle: "Welcome"
                     })
                 .when("/about",
                     {
-                        templateUrl: "tpl/about.html",
+                        templateUrl: "tpl/about/about.html",
                         controller: "aboutController",
                         pageTitle: "About"
                     })
                 .when("/contactUs",
                     {
-                        templateUrl: "tpl/contactUs.html",
+                        templateUrl: "tpl/contact_us/contactUs.html",
                         controller: "contactUsController",
                         pageTitle: "Contact US"
                     })
                 .when("/product/:shoeID",
                     {
-                        templateUrl: "tpl/product.html",
+                        templateUrl: "tpl/product/product.html",
                         controller: "productController",
                         pageTitle: "{{shoeName}}"
                     })
