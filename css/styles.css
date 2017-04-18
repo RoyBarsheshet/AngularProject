@@ -674,49 +674,53 @@ input:checked{
     z-index: 41;
     font-weight: bold;
     padding-left: 150px;
+    margin-left: 196px;
 }
 .prod_name{
     line-height: 0;
     font-family: Myriad Pro;
+    padding-left: 225px;
 }
 .Layer_2 {
     background-image: url("../images/Layer_2.png");
     /*position: absolute;*/
     /*left: 115px;*/
     /*top: 666px;*/
-    width: 860px;
+    width: 1086px;
     height: 1px;
     z-index: 42;
-    margin-left: 115px;
+    margin-left: 311px;
 }
 .Layer_2About {
     background-image: url("../images/Layer_2.png");
-
+    transform: translate(34%);
     width: 1156px;
     height: 1px;
     z-index: 42;
-    margin-left: 115px;
+    /*margin-left: 115px;*/
+    margin-bottom: 30px;
 }
 
 
 
 #left{
     float:left;
-    width:860px;
+    width:1090px;
     position: relative;
     top:14px;
-    left:115px;
+    left:310px;
     border-radius: 35px;
     background-color: white;
 }
 #leftAbout{
     float:left;
-    width: 86%;
-    position: relative;
-    top:14px;
-    left:115px;
+    width: 61%;
+    /*position: relative;*/
+    /*top:14px;*/
+    /*left:115px;*/
     border-radius: 35px;
     background-color: white;
+    transform: translate(34%);
 }
 /******************************homePage products******************/
 /*.shoesContainer{*/
@@ -837,11 +841,11 @@ width: 235px;
 }
 /**************************contact us*******************************/
 #contact{
-
+transform: translate(34%);
     width:1104px;
-    position: relative;
-    top:14px;
-    left:115px;
+    /*position: relative;*/
+    /*top:14px;*/
+    /*left:115px;*/
     border-radius: 35px;
     background-color: white;
     padding: 15px;
@@ -1228,9 +1232,11 @@ fieldset{
 .ShoesListUl{
     display: inline-flex;
     float: left;
+    margin: 33px;
 }
 .hrProdc{
    width: 90%;
+    text-align: center;
 }
 .name-prod{
     float: right;
@@ -1257,16 +1263,19 @@ text-align: center;
     margin-bottom: 20px;
 }
 #Lprod{
-    width:914px;
+    width:56%;
     float:left;
-    position: relative;
-    top:14px;
-    left:115px;
+    /*position: relative;*/
+    /*top:14px;*/
+    /*left:115px;*/
     border-radius: 35px;
     background-color: white;
+    transform: translate(34%);
 }
 .layer_2_prod{
-    width: 914px;
+    width: 1060px;
+    transform: translate(5%);
+    margin-bottom: 20px;
 }
 /***********************************about*-*********************************/
 .text--p--20 {
@@ -1335,7 +1344,7 @@ transform: translate(15%);
     /*****************************footer************************/
 .Rectangle_6 {
     background-color: rgb(59, 4, 1);
-    position: absolute;
+    position: relative;
     bottom: -2650px;
     width: 100%;
     height: 175px;
