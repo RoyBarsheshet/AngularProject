@@ -1,10 +1,12 @@
 @charset "utf-8";
+@import url("../tpl/contact_us/contactUs_css/contactUs.css");
 html body {
     padding:0;
     margin:0;
     width: 100%;
     height: 100%;
     background-color: rgb(241, 241, 241);
+    font-size: 10px;
 }
 li{
     list-style-type: none;
@@ -13,15 +15,24 @@ body{
     background-color: rgb(216, 216, 216);
 
 }
+fieldset label{
 
-.body_resize {
-    /*padding:0 20px 0 20px;*/
-    width:100%;
-    background:rgb(241, 241, 241);
-    min-height:100%;
-    height: 100%;
-
+    font-family: "Myriad Pro",fantasy;
+    color: rgb(57, 57, 57);
+display: flex;
 }
+input textarea{
+    margin-top: 2%;
+}
+
+/*.body_resize {*/
+    /*!*padding:0 20px 0 20px;*!*/
+    /*width:100%;*/
+    /*background:rgb(241, 241, 241);*/
+    /*min-height:100%;*/
+    /*height: 100%;*/
+
+/*}*/
 .Rectangle_5 {
     background-color: rgb(241, 241, 241);
     position: absolute;
@@ -809,11 +820,12 @@ h4{
 
 }
 .Sample_Item_Title {
-    font-size: 18px;
-    font-family: "lato";
+    font-size: 1.8rem;
+    font-family: "lato", serif;
     color: rgb(57, 57, 57);
-    height: 50px;
-width: 235px;
+    height: 60px;
+    width: 235px;
+    overflow: hidden;
 
 }
 ._99_99 {
@@ -870,321 +882,14 @@ transform: translate(34%);
     height: 1px;
     z-index: 42;
 }
-.mz_genericWidget{
-    text-align: center;
-}
 .submit{
     height: inherit;
     margin-top:20px;
     float: right;
     margin: 9px;
 }
-fieldset{
-    margin-top: 20px;
-    text-align: right;
-}
-fieldset label{
-    font-size: 18px;
-    font-family: "Myriad Pro",fantasy;
-    color: rgb(57, 57, 57);
 
-}
 
-div.mz_productFinder h3 {
-    font-size: 110%;
-    float: left;
-    padding: 25px 2% 0 2%;
-    text-align: right;
-    width: 21%
-}
-
-div.mz_productFinder fieldset {
-    float: left;
-    overflow: hidden;
-    padding: 10px 0;
-    text-align: left;
-    width: 75%
-}
-
-div.mz_productFinder fieldset fieldset {
-    margin-right: 2%;
-    padding: 0;
-    float: left;
-    width: 25%
-}
-
-div.mz_productFinder fieldset label {
-    display: block;
-    font-size: 90%;
-    margin-bottom: 3px;
-    font-weight: bold
-}
-
-div.mz_productFinder fieldset select {
-    border: 1px solid #b2b2b2;
-    font-size: 125%;
-    padding: 2px 2%;
-    width: 94%
-}
-
-div.mz_productFinder fieldset a {
-    color: #fff;
-    font-size: 110%;
-    font-weight: bold;
-    float: left;
-    margin-top: 7px;
-    padding: 10px 1.5%;
-    text-align: center;
-    width: 12%
-}
-
-div.mz_productFinder fieldset a:link,div.mz_productFinder fieldset a:visited {
-    background-color: #666;
-    text-decoration: none
-}
-
-div.mz_productFinder fieldset a:hover,div.mz_productFinder fieldset a:active {
-    background-color: #000
-}
-
-table.mz_dataTbl,.mz_genericContent table {
-    border-bottom: 1px solid #b2b2b2;
-    margin: 10px 0;
-    width: 100%
-}
-
-table.mz_dataTbl tr td,.mz_genericContent table tr td {
-    background-color: #fff;
-    border-top: 1px solid #efefef;
-    padding: 5px 10px
-}
-
-table.mz_dataTbl tr th,.mz_genericContent table tr th,table.mz_listTbl tr th {
-    background-color: #efefef;
-    border-top: 1px solid #b2b2b2;
-    border-bottom: 1px solid #b2b2b2;
-    font-size: 110%;
-    padding: 10px;
-    text-align: left
-}
-
-table.mz_dataTbl .mz_btnPrimary {
-    display: block;
-    float: none;
-    font-size: 100%;
-    height: 15px;
-    padding: 5px 0;
-    width: 130px
-}
-
-table.mz_dataTbl tr:nth-child(odd) td,.mz_genericContent table tr:nth-child(odd) td {
-    background-color: #fdfdfd
-}
-
-table.mz_dataTbl tr.mz_alt_rowB td {
-    border-top: none;
-    padding: 0 10px 5px 10px
-}
-
-table.mz_dataTbl tr.mz_subhead_row td {
-    font-size: 85%;
-    font-weight: bold;
-    text-transform: uppercase
-}
-
-table.mz_dataTbl tr.mz_addon_row td {
-    font-size: 85%
-}
-
-table.mz_dataTbl input {
-    border: 1px solid #b2b2b2;
-    width: 60px
-}
-
-table.mz_dataTbl select {
-    width: 100px
-}
-
-table.mz_dataTbl img {
-    display: block
-}
-
-table.mz_dataTbl input.mz_tblLink_tiny,table.mz_dataTbl a.mz_tblLink_tiny,table.mz_dataTbl a.wishlist-add-single {
-    display: block;
-    font-size: 75%;
-    margin: 5px 0 10px 0;
-    padding: 5px 0;
-    text-transform: uppercase;
-    width: 100%
-}
-
-table.mz_dataTbl input.mz_tblLink_tiny {
-    background-color: #efefef;
-    border: 1px solid #dfdfdf;
-    font-family: Arial,Helvetica,sans-serif;
-    text-align: center
-}
-
-table.mz_dataTbl a.mz_tblLink_tiny {
-    text-decoration: underline
-}
-
-table.mz_dataTbl input.mz_tblLink_tiny:hover {
-    border: 1px solid #999
-}
-
-table.mz_dataTbl input.inputCheckRadio {
-    border: none;
-    display: inline-block;
-    width: auto
-}
-
-table.mz_dataTbl a.mz_btnSecondary {
-    margin-left: 0
-}
-
-table.mz_dataTbl a.wishlist-add-single {
-    color: #fff;
-    text-align: center;
-    text-decoration: none
-}
-
-table.mz_dataTbl a.wishlist-add-single:link,table.mz_dataTbl a.wishlist-add-single:visited {
-    background-color: #666
-}
-
-table.mz_dataTbl a.wishlist-add-single:hover,table.mz_dataTbl a.wishlist-add-single:active {
-    background-color: #000
-}
-
-table.mz_dataTbl span {
-    font-weight: bold
-}
-
-table.mz_dataTbl span.mz_prevPrice {
-    color: #999;
-    font-weight: normal;
-    text-decoration: line-through
-}
-
-table.mz_dataTbl strong.mz_salePrice {
-}
-
-table.mz_dataTbl tr.tbl_neutralMsg td {
-    background-color: #f9f9f9;
-    padding: 15px 10px
-}
-
-table.mz_dataTbl tr.tbl_errorMsg td {
-    background-color: #ffe5e5;
-    padding: 15px 10px
-}
-
-table.mz_dataTbl tr.tbl_successMsg td {
-    background-color: #edfde3;
-    padding: 15px 10px
-}
-
-table.mz_dataTbl tr.tbl_neutralMsg td p,table.mz_dataTbl tr.tbl_errorMsg td p,table.mz_dataTbl tr.tbl_successMsg td p {
-    font-size: 110%;
-    font-weight: bold;
-    text-align: center
-}
-
-table.mz_dataTbl tr.tbl_errorMsg td p {
-    color: #c00
-}
-
-table.mz_dataTbl tr.tbl_successMsg td p {
-    color: #390
-}
-
-table.mz_dataTbl tr.mz_discontinue_row td {
-    opacity: .3
-}
-
-table.mz_dataTbl tr.mz_discontinue_row input.mz_tblLink_tiny:hover {
-    border: 1px solid #dfdfdf
-}
-
-table.mz_dataTbl tr.mz_discontinue_row a,table.mz_dataTbl tr.mz_discontinue_row a:hover {
-    cursor: default;
-    text-decoration: none
-}
-
-table.mz_dataTbl tr.mz_discontinueFlag td {
-    background-color: #999;
-    color: #fff;
-    font-size: 100%;
-    line-height: 1.2;
-    padding: 10px;
-    text-align: center;
-    text-transform: uppercase
-}
-
-table.mz_dataTbl tr.mz_discontinueFlag td a {
-    color: #fff;
-    font-weight: bold
-}
-
-.mz_instockMsg {
-    color: #093
-}
-
-.mz_lowstockMsg {
-    color: #f90
-}
-
-.mz_nostockMsg {
-    color: #600
-}
-
-.mz_disstockMsg {
-    color: #999
-}
-
-#mz_form {
-    overflow: hidden;
-    padding: 10px 0 0 0
-}
-
-#mz_form h3 {
-    border-top: 1px solid #efefef;
-    clear: both;
-    font-size: 130%;
-    font-weight: normal;
-    margin: 10px 0 15px 0;
-    padding: 5px 0 0 10px
-}
-
-#mz_form h3 span {
-    color: #999
-}
-
-#mz_form fieldset {
-    overflow: hidden;
-    padding: 5px 0;
-
-}
-
-#mz_form fieldset input,#mz_form fieldset select,#mz_form fieldset textarea,#mz_form fieldset label {
-    font-size: 110%
-}
-
-#mz_form fieldset input,#mz_form fieldset select,#mz_form fieldset textarea {
-    margin: 15px;
-    color: #5f5f5f;
-    font-family: Arial,Helvetica,sans-serif;
-    padding: .3em 3px;
-    width: 300px
-}
-
-#mz_form fieldset label,#mz_form fieldset input,#mz_form fieldset select,#mz_form fieldset textarea {
-    display: block;
-    text-align: left;
-    padding-right: 9px;
-    height: inherit;
-}
 #inputCheckRadio {
     border: none;
     display: inline-block;

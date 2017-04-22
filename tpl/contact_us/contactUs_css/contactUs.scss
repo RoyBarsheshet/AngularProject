@@ -1,1 +1,11 @@
+$blackColor:rgb(57, 57, 57);
 
+.instruction {
+  font-size: 1.8rem;
+  font-family: "lato", serif;
+  color: $blackColor;
+}
+
+label {
+  font-size: 1.8rem;
+}
