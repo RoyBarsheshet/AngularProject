@@ -13,59 +13,66 @@
     <script src="tpl/About/about.controller.js"></script>
     <script src="tpl/contact_us/contactUs.controller.js"></script>
     <script src="tpl/product/product.controller.js"></script>
-    <link rel="stylesheet" href="css/styles.css">
+    <!--<link rel="stylesheet" href="css/styles.css">-->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/utilities.css">
 
 
 </head>
 <body>
-    <div>
+<header class="container-fluid">
 
-        <header style="background-color: rgb(216, 216, 216);">
-<!-----------------------------------Nav Menu-------------------------------------------------------------------->
+    <!-----------------------------------Nav Menu-------------------------------------------------------------------->
+    <div class="row bg-inverse d-flex p-2">
+            <a href="#" class="mr-5 ml-2 align-self-center nav-link nounderline text-white">SHOES<strong>SHOP</strong></a>
             <nav>
-                <div><a href="#" class="SHOESSHOP">SHOES<b class="bold">SHOP</b></a></div>
-                <div class="Rectangle_1 Sub_Nav Layer_18 Layer_19">
-                    <div id="container">
-                        <div id="nav">
-                            <a href="#!/home" class="active" ng-click="setActive($event)">Home</a>
-                            <a href="#!/about" ng-click="setActive($event)">About</a>
-                            <a href="#!/contactUs" ng-click="setActive($event)">Contact</a>
-                        </div>
-                    </div>
-                </div>
+                <ul id="nav" class="nav">
+                    <li class="nav-item mr-3">
+                        <a href="#!/home" ng-class="getClass('/home')" class="active nav-link text-warning" ng-click="setActive($event)">Home</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a href="#!/about" ng-class="getClass('/about')" class="text-warning nav-link" ng-click="setActive($event)">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#!/contactUs" ng-class="getClass('/contactUs')" class="text-warning nav-link" ng-click="setActive($event)">Contact</a>
+                    </li>
+                </ul>
             </nav>
+        </div>
 
-        </header>
+</header>
 
-        <section>
+<section class="container-fluid">
 
-            <!-----------------------------------banner------------------------------------------------------->
-            <article>
-                <div class="Rectangle_2">
-                    <div style="background-image: url('./images/shutterstock_banner.png')" class="Group_2"></div>
-                    <div class="banner-con">
-                        <div class="Ellipse_3_copy_2"></div>
-                        <div class="Ellipse_3_copy"></div>
-                        <div class="Ellipse_3"></div>
-                        <div class="Layer_20">
-                            <div class="Big_Title_Here_Lorem_ipsum_dolor_sit_amet__cons"><b>THE NEW JORDAN'S</b>
-                                </br>
-                                Discover The Air Jordan Collection Now! Find Your Style & Buy Online
-                            </div>
-                        </div>
-                    </div>
-                    <div class="Rounded_Rectangle_1 hvr-grow-shadow">
-                        <a href="#!/product/9" class="SHOW_ME_MORE">SHOW ME MORE</a>
+    <!-----------------------------------banner------------------------------------------------------->
+    <article class="row">
+        <div class="Rectangle_2">
+            <div style="background-image: url('./images/shutterstock_banner.png')" class="Group_2"></div>
+            <div class="banner-con">
+                <div class="Ellipse_3_copy_2"></div>
+                <div class="Ellipse_3_copy"></div>
+                <div class="Ellipse_3"></div>
+                <div class="Layer_20">
+                    <div class="Big_Title_Here_Lorem_ipsum_dolor_sit_amet__cons"><b>THE NEW JORDAN'S</b>
+                        </br>
+                        Discover The Air Jordan Collection Now! Find Your Style & Buy Online
                     </div>
                 </div>
-            </article>
-        </section>
-        <section>
-            <!-------------------------------- View start-------------------------------------------------->
-            <ng-view autoscroll="true"></ng-view>
-            <!-------------------------------- View end-------------------------------------------------->
-        </section>
-    </div>
+            </div>
+            <div class="Rounded_Rectangle_1 hvr-grow-shadow">
+                <a href="#!/product/9" class="SHOW_ME_MORE">SHOW ME MORE</a>
+            </div>
+        </div>
+    </article>
+</section>
+
+<section class="container">
+    <!-------------------------------- View start-------------------------------------------------->
+        <ng-view></ng-view>
+    <!-------------------------------- View end-------------------------------------------------->
+</section>
+</header>
 
 <!--------------------------------------footer----------------------------------------------------------->
 <footer class="Rectangle_6">
