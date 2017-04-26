@@ -1,0 +1,22 @@
+{
+  "name": "angular",
+  "version": "1.0.0",
+  "description": "**Full Stack Curse</br></br></br>**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RoyBarsheshet/AngularProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RoyBarsheshet/AngularProject/issues"
+  },
+  "homepage": "https://github.com/RoyBarsheshet/AngularProject#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6"
+  }
+}
