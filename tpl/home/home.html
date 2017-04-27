@@ -1,27 +1,28 @@
-<div ng-controller="homeController" class="d-flex m-3">
+<div ng-controller="homeController" class="d-flex flex-wrap my-5 justify-content-center ng-scope col-md-10 offset-md-1">
 
-    <section class="rounded bg-white d-flex home-section-width row m-5">
+    <section class="rounded d-flex home-section-width home-section-bg-color row col-md-8">
         <h2 class="w-100 pl-5">FEATURED PRODUCTS</h2>
-                <ul class="nodecoretion ul-product-width" ng-repeat="shoe in shoes | filter:searchText | orderBy:sortShoes">
-                    <li>
-                        <img class="h-50 w-100" ng-src="images/{{shoe.shoeImage}}" alt="{{shoe.shoeImage}}"/>
+                <ul class="nodecoretion d-flex flex-wrap row col-md-12">
+                    <li ng-repeat="shoe in shoes | filter:searchText | orderBy:sortShoes" class="justify-content-center col-md-6 col-xl-4 ng-scope">
+                        <img class="h-25 w-25" ng-src="images/{{shoe.shoeImage}}" alt="{{shoe.shoeImage}}"/>
                         <hr>
                         <h3 class="Sample_Item_Title">{{shoe.shoeName}}
                             <h3 class="NIKE">{{shoe.shoeBrand}}</h3>
                             <h4>{{shoe.shoeCategory}}</h4></h3>
                         </br>
                         <h4 class="_99_99">${{shoe.shoePrice}}</h4>
-                        <p class="home-btn hvr-grow-shadow"><a class="tell-me-more" href="#!/product/{{shoe.shoeID}}">Tell
-                            me More</a></p>
+                        <button type="button" class="btn btn-danger btn-lg" href="#!/product/{{shoe.shoeID}}">Tell me More</button>
 
                     </li>
                 </ul>
 
 
     </section>
-    <aside class="m-5 pt-5">
+    <aside class="pt-5 flex-md-last flex-first col-md-3 offset-md-1">
 
-        <input type="text" class="Rectangle_4_copy search SEARCH" placeholder="SEARCH" ng-model="searchText.shoeBrand"/>
+        <div class="form-group">
+            <input type="text" class="form-control search text-capitalize" placeholder="search" ng-model="searchText.shoeBrand">
+        </div>
 
         <div class="Rectangle_4 CATEGORIES">CATEGORIES</div>
 
@@ -36,13 +37,16 @@
 
 
         <div class="Rectangle_4b">
-            <div class="SEARCH_OPTIONS">SEARCH OPTIONS</div>
-            <div class="Layer_6b"></div>
-            <select class="search_dropdwon" placeholder="Choose.." ng-model="sortShoes" ng-click="clearSortPrice()">
-                <option value="+shoePrice">Choose...</option>
-                <option value="+shoeName">Choose by name</option>
-                <option value="+shoeBrand">Choose by manufacturer</option>
-            </select>
+
+            <div class="form-group">
+                <label class="text-uppercase" for="search-options">search options</label>
+                <select class="form-control"  placeholder="Choose.." ng-model="sortShoes" ng-click="clearSortPrice()" id="search-options">
+                    <option value="+shoePrice">Choose...</option>
+                    <option value="+shoeName">Choose by name</option>
+                    <option value="+shoeBrand">Choose by manufacturer</option>
+                </select>
+            </div>
+
             <ul id="sort-price-links">
                 <li><a id="LOW_to_HIGH" ng-href="" ng-click='sortByPrice("+shoePrice")'>LOW to HIGH</a></li>
                 <li><a id="HIGH_to_LOW" ng-href="" ng-click='sortByPrice("-shoePrice")'>HIGH to LOW</a></li>

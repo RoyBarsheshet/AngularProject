@@ -1,6 +1,10 @@
 .nounderline {
-    text-decoration: none
-}
-.nodecoretion{
-    list-style-type: none;
-}
+  text-decoration: none; }
+
+.nodecoretion {
+  list-style-type: none; }
+
+.rounded {
+  border-radius: 1rem; }
+
+/*# sourceMappingURL=utilities.css.map */
