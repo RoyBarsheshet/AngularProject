@@ -1,3 +1,6 @@
 .nounderline {
     text-decoration: none
 }
+.nodecoretion{
+    list-style-type: none;
+}
