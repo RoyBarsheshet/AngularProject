@@ -1,46 +1,67 @@
-<div ng-controller="homeController" class="d-flex flex-wrap my-5 justify-content-center ng-scope col-md-10 offset-md-1">
+<div ng-controller="homeController" class="d-flex flex-wrap my-5 justify-content-center col-md-10 offset-md-1"
+     xmlns="http://www.w3.org/1999/html">
 
-    <section class="rounded d-flex home-section-width home-section-bg-color row col-md-8">
-        <h2 class="w-100 pl-5">FEATURED PRODUCTS</h2>
-                <ul class="nodecoretion d-flex flex-wrap row col-md-12">
-                    <li ng-repeat="shoe in shoes | filter:searchText | orderBy:sortShoes" class="justify-content-center col-md-6 col-xl-4 ng-scope">
-                        <img class="h-25 w-25" ng-src="images/{{shoe.shoeImage}}" alt="{{shoe.shoeImage}}"/>
-                        <hr>
-                        <h3 class="Sample_Item_Title">{{shoe.shoeName}}
-                            <h3 class="NIKE">{{shoe.shoeBrand}}</h3>
-                            <h4>{{shoe.shoeCategory}}</h4></h3>
-                        </br>
-                        <h4 class="_99_99">${{shoe.shoePrice}}</h4>
-                        <button type="button" class="btn btn-danger btn-lg" href="#!/product/{{shoe.shoeID}}">Tell me More</button>
+    <section class="rounded d-flex row col-md-9">
+        <div class="w-100"><h2>FEATURED PRODUCTS</h2>
+            <hr>
+        </div>
+        <ul class="nodecoretion d-flex flex-wrap row">
+            <li ng-repeat="shoe in shoes | filter:searchText | orderBy:sortShoes"
+                class="justify-content-center col-md-6 col-xl-4">
+                <img class="img-thumbnail border-0" ng-src="images/{{shoe.shoeImage}}" alt="{{shoe.shoeImage}}"/>
 
-                    </li>
-                </ul>
+                <hr class="my-4">
+
+
+                <h2 class="" {{shoe.shoeName}}></h2>
+                <h2 class="">{{shoe.shoeBrand}}</h2>
+                <h4>{{shoe.shoeCategory}}</h4>
+                <p class="lead my-4 truncate">{{shoe.shoeArticle}}</p>
+                <div class="row justify-content-between mb-5 mt-3">
+                    <p class="col-3 align-self-center">${{shoe.shoePrice}}</p>
+                    <p class="lead col-9 align-self-center">
+                        <a class="btn btn-danger btn-lg" href="#!/product/{{shoe.shoeID}}" role="button">Tell me
+                            More</a>
+                    </p>
+                </div>
+
+            </li>
+        </ul>
 
 
     </section>
-    <aside class="pt-5 flex-md-last flex-first col-md-3 offset-md-1">
+    <aside class="pt-5 flex-md-last flex-first col-md-3">
 
         <div class="form-group">
-            <input type="text" class="form-control search text-capitalize" placeholder="search" ng-model="searchText.shoeBrand">
+            <input type="text" class="form-control border search text-uppercase font-weight-bold text-muted "
+                   placeholder="search" ng-model="searchText.shoeBrand">
         </div>
 
-        <div class="Rectangle_4 CATEGORIES">CATEGORIES</div>
+        <div class="d-flex col-12">
+            <div class="col-12">CATEGORIES</div>
+            <div class="col-12 justify-content-center">
+            <label class="col-2"> MEN</label>
+            <hr class="col-8">
+            <input type="checkbox" class="col-2" ng-model="MEN" ng-click="filterCategories()"/>
+            </div>
+            <label>WOMEN</label>
+            <hr>
+            <input type="checkbox" class="unopen-cattegorys1" ng-model="WOMEN" ng-click="filterCategories()"/>
 
-        <div class="categorays-type">
-            <img src="images/categorays_type.gif" width="233" height="147" alt="">
+            <label>KIDS</label>
+                <hr>
+            <input type="checkbox" class="unopen-cattegorys2" ng-model="KIDS" ng-click="filterCategories()"/>
+            <label>SPORTS</label>
+                <hr>
+            <input type="checkbox" class="unopen-cattegorys3" ng-model="SPORTS" ng-click="filterCategories()"/>
         </div>
-        <div class="Layer_6"></div>
-        <input type="checkbox" class="unopen-cattegorys" ng-model="MEN" ng-click="filterCategories()"/>
-        <input type="checkbox" class="unopen-cattegorys1" ng-model="WOMEN" ng-click="filterCategories()"/>
-        <input type="checkbox" class="unopen-cattegorys2" ng-model="KIDS" ng-click="filterCategories()"/>
-        <input type="checkbox" class="unopen-cattegorys3" ng-model="SPORTS" ng-click="filterCategories()"/>
-
 
         <div class="Rectangle_4b">
 
             <div class="form-group">
                 <label class="text-uppercase" for="search-options">search options</label>
-                <select class="form-control"  placeholder="Choose.." ng-model="sortShoes" ng-click="clearSortPrice()" id="search-options">
+                <select class="form-control" placeholder="Choose.." ng-model="sortShoes" ng-click="clearSortPrice()"
+                        id="search-options">
                     <option value="+shoePrice">Choose...</option>
                     <option value="+shoeName">Choose by name</option>
                     <option value="+shoeBrand">Choose by manufacturer</option>

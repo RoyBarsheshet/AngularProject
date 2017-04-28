@@ -1091,7 +1091,9 @@ body{
 .home-section-bg-color{
     background-color: white;
 }
-
+.border{
+    border: 1px solid rgb(204, 204, 204);
+}
 /*********** underline for nav***************/
 .hvr-underline-from-center {
     display: inline-block;
@@ -1122,15 +1124,22 @@ body{
     left: 0;
     right: 0;
 }
+.search{
+    background-color: rgb(233,233,233);
+    font-family: Myriad Pro,sans-serif;
+    border-radius:initial ;
+    line-height: 2;
+}
 
-/*.search:focus{*/
+.search:focus{
     /*content: "\f130";*/
-    /*outline: none;*/
-    /*box-shadow:0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);*/
-    /*transition: box-shadow 0.3s, border 0.3s;*/
-    /*transition-delay: 0s;*/
-    /*transition-duration:0.2s;*/
-    /*transition-property:box-shadow;*/
-    /*transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);*/
-    /*border: 1px;*/
-/*}*/
+    outline: none;
+    box-shadow:0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+    transition: box-shadow 0.3s, border 0.3s;
+    transition-delay: 0s;
+    transition-duration:0.2s;
+    transition-property:box-shadow;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px;
+    background-color: rgb(233,233,233);
+}
