@@ -28,20 +28,20 @@
     <!-----------------------------------Nav Menu-------------------------------------------------------------------->
     <div class="row bg-inverse d-flex p-2">
         <a href="#" class="mr-3 ml-5 align-self-center nav-link nounderline text-white">SHOES<strong>SHOP</strong></a>
-        <nav>
+        <nav class="align-self-center">
             <ul id="nav" class="nav">
                 <li class="nav-item mr-3">
                     <a href="#!/home" ng-class="getClass('/home')"
-                       class="active nav-link text-warning hvr-underline-from-center"
+                       class="active nav-style hvr-underline-from-center"
                        ng-click="setActive($event)">Home</a>
                 </li>
                 <li class="nav-item mr-3">
                     <a href="#!/about" ng-class="getClass('/about')"
-                       class="text-warning nav-link hvr-underline-from-center" ng-click="setActive($event)">About</a>
+                       class=" nav-style hvr-underline-from-center" ng-click="setActive($event)">About</a>
                 </li>
                 <li class="nav-item">
                     <a href="#!/contactUs" ng-class="getClass('/contactUs')"
-                       class="text-warning nav-link hvr-underline-from-center" ng-click="setActive($event)">Contact</a>
+                       class=" nav-style hvr-underline-from-center" ng-click="setActive($event)">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -97,11 +97,11 @@
 </header>
 
 <!--------------------------------------footer----------------------------------------------------------->
-<footer class="container-fluid bg-danger text-white h-25">
-    <div class="row">
-        <a href="#" class="mr-3 ml-5 align-self-center nav-link nounderline text-white">SHOES<strong>SHOP</strong></a>
-        <span class="copyRights">&copy;</span>
-        <span class="_2017">2017</span>
+<footer class="container-fluid footer-bg text-white h-25">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-1"><a href="#" class="nounderline text-white">SHOES<strong>SHOP</strong></a></div>
+        <div class="">&copy;</div>
+        <div class="col-1">2017</div>
     </div>
 </footer>
 

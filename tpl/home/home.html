@@ -5,7 +5,7 @@
         <div class="w-100"><h2>FEATURED PRODUCTS</h2>
             <hr>
         </div>
-        <ul class="nodecoretion d-flex flex-wrap row">
+        <ul class="nodecoretion d-flex flex-wrap row p-0">
             <li ng-repeat="shoe in shoes | filter:searchText | orderBy:sortShoes"
                 class="justify-content-center col-md-6 col-xl-4">
                 <img class="img-thumbnail border-0" ng-src="images/{{shoe.shoeImage}}" alt="{{shoe.shoeImage}}"/>
@@ -13,14 +13,14 @@
                 <hr class="my-4">
 
 
-                <h2 class="" {{shoe.shoeName}}></h2>
-                <h2 class="">{{shoe.shoeBrand}}</h2>
-                <h4>{{shoe.shoeCategory}}</h4>
-                <p class="lead my-4 truncate">{{shoe.shoeArticle}}</p>
+                <h4 class="text-style-title font-weight-bold truncate-name"> {{shoe.shoeName}}</h4>
+                <h5 class="">{{shoe.shoeBrand}}</h5>
+                <h6>{{shoe.shoeCategory}}</h6>
+                <p class="lead my-4 truncate text-style-article">{{shoe.shoeArticle}}</p>
                 <div class="row justify-content-between mb-5 mt-3">
-                    <p class="col-3 align-self-center">${{shoe.shoePrice}}</p>
-                    <p class="lead col-9 align-self-center">
-                        <a class="btn btn-danger btn-lg" href="#!/product/{{shoe.shoeID}}" role="button">Tell me
+                    <p class="col-3 align-self-center price font-weight-bold">${{shoe.shoePrice}}.<span class="cent font-weight-bold">99</span></p>
+                    <p class="lead col-8 offset-1">
+                        <a class="btn btn-danger btn-md text-uppercase font-weight-bold" href="#!/product/{{shoe.shoeID}}" role="button">Tell me
                             More</a>
                     </p>
                 </div>
@@ -37,13 +37,12 @@
                    placeholder="search" ng-model="searchText.shoeBrand">
         </div>
 
-        <div class="d-flex col-12">
-            <div class="col-12">CATEGORIES</div>
-            <div class="col-12 justify-content-center">
+        <div class="jumbotron p-0 border-0">
+            <h4 class="categories-title m-2">CATEGORIES</h4>
+            <hr class="p-0 m-0">
             <label class="col-2"> MEN</label>
             <hr class="col-8">
             <input type="checkbox" class="col-2" ng-model="MEN" ng-click="filterCategories()"/>
-            </div>
             <label>WOMEN</label>
             <hr>
             <input type="checkbox" class="unopen-cattegorys1" ng-model="WOMEN" ng-click="filterCategories()"/>

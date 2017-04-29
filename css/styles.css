@@ -1094,6 +1094,18 @@ body{
 .border{
     border: 1px solid rgb(204, 204, 204);
 }
+.active{
+    color: rgb(212, 172, 113);
+}
+.nav-style{
+    font-size: 1.1em;
+    font-family: "Helvetica", sans-serif;
+    color: white;
+
+}
+.nav-style:hover ,.nav-style:focus {
+    color: rgb(212, 172, 113);
+}
 /*********** underline for nav***************/
 .hvr-underline-from-center {
     display: inline-block;
@@ -1142,4 +1154,46 @@ body{
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px;
     background-color: rgb(233,233,233);
+}
+.price{
+    font-size: 1.5em;
+    font-family: "Proxima Nova", sans-serif;
+    color: #d9534f;
+
+}
+.cent {
+    position: relative;
+    left: -.1em;
+    vertical-align: super;
+    padding-bottom: .38em;
+    background: #fff;
+    font-size: 0.5em;
+    text-decoration: underline;
+}
+.footer-bg
+{
+    background-color: rgb(59,4,1);
+}
+.categories-title {
+    font-size: 1.1em;
+    font-family: "Myriad Pro", sans-serif;
+    line-height: 2.75;
+}
+.truncate-name{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+.text-style-article {
+    font-size: 0.9em;
+    font-family: "Myriad Pro", sans-serif;
+    color: #393939;
+
+}
+.text-style-title {
+    font-size: 1.6em;
+    font-family: "Proxima Nova", sans-serif;
+    color: #393939;
 }
