@@ -9,6 +9,6 @@ shoeApp.controller("productController", function ($rootScope, $scope, $route, $h
         $rootScope.title = $scope.shoe.shoeName;
 
     }), function errorCallback(response) {
-        console.log("ERROR");
+        console.log("ERROR " + response);
     };
 })

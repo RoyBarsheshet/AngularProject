@@ -26,3 +26,13 @@ a:focus{
   color: white;
   text-decoration: none;
 }
+
+
+input[type=checkbox] { display:none; } /* to hide the checkbox itself */
+input[type=checkbox] + .line:after {
+  font-family: FontAwesome;
+  display: inline-block;
+}
+
+input[type=checkbox] + .line:after { content: "\f055"; } /* unchecked icon */
+input[type=checkbox]:checked + .line:after { content: "\f056"; } /* checked icon */

@@ -8,7 +8,6 @@ shoeApp.controller("mainController", function ($route, $scope, $location, $rootS
     // };
 
     $scope.getClass = function (path) {
-        console.log(path);
         return ($location.path().substr(0, path.length) === path) ? 'active' : '';
     }
 

@@ -18,18 +18,9 @@ shoeApp.controller("homeController", function ($rootScope, $scope, $route, $http
 
     $scope.sortByPrice = function (by) {
         $scope.sortShoes = by;
-        this.clearSortPrice();
-        event.target.className = "HIGH_to_visited";
-
+        $('#sort-price-links li span').removeClass('font-weight-bold');
+        $(event.target).addClass('font-weight-bold');
     };
-
-    $scope.clearSortPrice = function () {
-        var links = document.querySelectorAll('#sort-price-links li a');
-        for (var x = 0; x < links.length; x++) {
-            links[x].className = "";
-        }
-
-    }
 
     /*********************************** Categories filter ***************************************************/
     $scope.filterCategories = function () {

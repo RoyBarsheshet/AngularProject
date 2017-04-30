@@ -16,11 +16,11 @@
                 <h4 class="text-style-title font-weight-bold truncate-name"> {{shoe.shoeName}}</h4>
                 <h5 class="">{{shoe.shoeBrand}}</h5>
                 <h6>{{shoe.shoeCategory}}</h6>
-                <p class="lead my-4 truncate text-style-article">{{shoe.shoeArticle}}</p>
-                <div class="row justify-content-between mb-5 mt-3">
-                    <p class="col-3 align-self-center price font-weight-bold">${{shoe.shoePrice}}.<span class="cent font-weight-bold">99</span></p>
-                    <p class="lead col-8 offset-1">
-                        <a class="btn btn-danger btn-md text-uppercase font-weight-bold" href="#!/product/{{shoe.shoeID}}" role="button">Tell me
+                <p class="lead truncate text-style-article">{{shoe.shoeArticle}}</p>
+                <div class="d-flex justify-content-between">
+                    <p class="price font-weight-bold ng-binding align-self-center">${{shoe.shoePrice}}.<span class="cent font-weight-bold">99</span></p>
+                    <p class="lead align-self-center">
+                        <a class="btn btn-danger btn-lg text-uppercase font-weight-bold" href="#!/product/{{shoe.shoeID}}" role="button">Tell me
                             More</a>
                     </p>
                 </div>
@@ -37,23 +37,29 @@
                    placeholder="search" ng-model="searchText.shoeBrand">
         </div>
 
-        <div class="jumbotron p-0 border-0">
+        <ul class="list-group">
             <h4 class="categories-title m-2">CATEGORIES</h4>
-            <hr class="p-0 m-0">
-            <label class="col-2"> MEN</label>
-            <hr class="col-8">
-            <input type="checkbox" class="col-2" ng-model="MEN" ng-click="filterCategories()"/>
-            <label>WOMEN</label>
-            <hr>
-            <input type="checkbox" class="unopen-cattegorys1" ng-model="WOMEN" ng-click="filterCategories()"/>
+            <li class="list-group-item justify-content-between">
+                <label for="li1" class="w-100 d-flex justify-content-between">MEN</label>
+                <input type="checkbox" id="li1" class="col-2" ng-model="MEN" ng-click="filterCategories()"/>
+                <div class="line"></div>
+                <hr />
+            </li>
+            <li class="list-group-item justify-content-between">
+                <label for="li2" class="w-100 d-flex justify-content-between">WOMEN</label>
+                <div class="line w-100"></div>
+                <input type="checkbox" id="li2"  class="unopen-cattegorys1" ng-model="WOMEN" ng-click="filterCategories()"/>
 
-            <label>KIDS</label>
-                <hr>
-            <input type="checkbox" class="unopen-cattegorys2" ng-model="KIDS" ng-click="filterCategories()"/>
-            <label>SPORTS</label>
-                <hr>
-            <input type="checkbox" class="unopen-cattegorys3" ng-model="SPORTS" ng-click="filterCategories()"/>
-        </div>
+            </li>
+            <li class="list-group-item justify-content-between">
+                <input type="checkbox" id="li3" class="unopen-cattegorys2" ng-model="KIDS" ng-click="filterCategories()"/>
+                <label for="li3" class="w-100 d-flex justify-content-between">KIDS</label>
+            </li>
+            <li class="list-group-item justify-content-between">
+                <input type="checkbox" id="li4" class="unopen-cattegorys3" ng-model="SPORTS" ng-click="filterCategories()"/>
+                <label for="li4" class="w-100 d-flex justify-content-between">SPORTS</label>
+            </li>
+        </ul>
 
         <div class="Rectangle_4b">
 
@@ -68,8 +74,8 @@
             </div>
 
             <ul id="sort-price-links">
-                <li><a id="LOW_to_HIGH" ng-href="" ng-click='sortByPrice("+shoePrice")'>LOW to HIGH</a></li>
-                <li><a id="HIGH_to_LOW" ng-href="" ng-click='sortByPrice("-shoePrice")'>HIGH to LOW</a></li>
+                <li><span id="LOW_to_HIGH" ng-href="" ng-click='sortByPrice("+shoePrice")'>LOW to HIGH</span></li>
+                <li><span id="HIGH_to_LOW" ng-href="" ng-click='sortByPrice("-shoePrice")'>HIGH to LOW</span></li>
             </ul>
         </div>
     </aside>
