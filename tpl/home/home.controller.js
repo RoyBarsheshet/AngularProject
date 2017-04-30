@@ -18,8 +18,8 @@ shoeApp.controller("homeController", function ($rootScope, $scope, $route, $http
 
     $scope.sortByPrice = function (by) {
         $scope.sortShoes = by;
-        $('#sort-price-links li span').removeClass('font-weight-bold');
-        $(event.target).addClass('font-weight-bold');
+        $('#sort-price-links li span').removeClass('price-active font-weight-bold');
+        $(event.target).addClass('price-active font-weight-bold');
     };
 
     /*********************************** Categories filter ***************************************************/
@@ -34,8 +34,11 @@ shoeApp.controller("homeController", function ($rootScope, $scope, $route, $http
                     }
                 }
             }
+
         }
+
         $scope.shoes = (data.length > 0) ? data : shoeCache;
+
 
     };
     $scope.filterTypeOF = function () {

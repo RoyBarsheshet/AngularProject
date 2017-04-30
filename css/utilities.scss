@@ -27,12 +27,39 @@ a:focus{
   text-decoration: none;
 }
 
+.text-nav
+{
+  font-size: 1.1em;
 
-input[type=checkbox] { display:none; } /* to hide the checkbox itself */
-input[type=checkbox] + .line:after {
-  font-family: FontAwesome;
-  display: inline-block;
+}
+.nooutline{
+  outline: none;
+}
+.myriad-font {
+  font-family: "Myriad Pro", sans-serif;
+}
+.pointer{
+  cursor: pointer;
+}
+.Proxima-font {
+  font-family: "Proxima Nova", sans-serif;
+}
+.home-title{
+  font-size: 2em;
+}
+color-black{
+  color: black;
 }
 
-input[type=checkbox] + .line:after { content: "\f055"; } /* unchecked icon */
-input[type=checkbox]:checked + .line:after { content: "\f056"; } /* checked icon */
+//#li1{
+//  font-family: FontAwesome;
+//  content: "\f056";
+//}
+//input[type=checkbox] { display:none; } /* to hide the checkbox itself */
+//input[type=checkbox] + .line:after {
+//  font-family: FontAwesome;
+//  display: inline-block;
+//}
+//
+//input[type=checkbox] + .line:after { content: "\f055"; } /* unchecked icon */
+//input[type=checkbox]:checked + .line:after { content: "\f056"; } /* checked icon */

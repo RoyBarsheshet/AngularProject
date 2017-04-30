@@ -26,21 +26,25 @@ a:focus {
   color: white;
   text-decoration: none; }
 
-input[type=checkbox] {
-  display: none; }
+.text-nav {
+  font-size: 1.1em; }
 
-/* to hide the checkbox itself */
-input[type=checkbox] + .line:after {
-  font-family: FontAwesome;
-  display: inline-block; }
+.nooutline {
+  outline: none; }
 
-input[type=checkbox] + .line:after {
-  content: "\f055"; }
+.myriad-font {
+  font-family: "Myriad Pro", sans-serif; }
 
-/* unchecked icon */
-input[type=checkbox]:checked + .line:after {
-  content: "\f056"; }
+.pointer {
+  cursor: pointer; }
 
-/* checked icon */
+.Proxima-font {
+  font-family: "Proxima Nova", sans-serif; }
+
+.home-title {
+  font-size: 2em; }
+
+color-black {
+  color: black; }
 
 /*# sourceMappingURL=utilities.css.map */

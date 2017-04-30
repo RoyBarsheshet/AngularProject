@@ -2,7 +2,7 @@
      xmlns="http://www.w3.org/1999/html">
 
     <section class="rounded d-flex row col-md-9">
-        <div class="w-100"><h2>FEATURED PRODUCTS</h2>
+        <div class="w-100"><h2 class="Proxima-font home-title font-weight-bold">FEATURED PRODUCTS</h2>
             <hr>
         </div>
         <ul class="nodecoretion d-flex flex-wrap row p-0">
@@ -18,9 +18,11 @@
                 <h6>{{shoe.shoeCategory}}</h6>
                 <p class="lead truncate text-style-article">{{shoe.shoeArticle}}</p>
                 <div class="d-flex justify-content-between">
-                    <p class="price font-weight-bold ng-binding align-self-center">${{shoe.shoePrice}}.<span class="cent font-weight-bold">99</span></p>
+                    <p class="price font-weight-bold ng-binding align-self-center">${{shoe.shoePrice}}.<span
+                            class="cent font-weight-bold">99</span></p>
                     <p class="lead align-self-center">
-                        <a class="btn btn-danger btn-lg text-uppercase font-weight-bold" href="#!/product/{{shoe.shoeID}}" role="button">Tell me
+                        <a class="btn btn-danger btn-lg text-uppercase font-weight-bold"
+                           href="#!/product/{{shoe.shoeID}}" role="button">Tell me
                             More</a>
                     </p>
                 </div>
@@ -37,47 +39,66 @@
                    placeholder="search" ng-model="searchText.shoeBrand">
         </div>
 
-        <ul class="list-group">
-            <h4 class="categories-title m-2">CATEGORIES</h4>
-            <li class="list-group-item justify-content-between">
-                <label for="li1" class="w-100 d-flex justify-content-between">MEN</label>
-                <input type="checkbox" id="li1" class="col-2" ng-model="MEN" ng-click="filterCategories()"/>
-                <div class="line"></div>
-                <hr />
-            </li>
-            <li class="list-group-item justify-content-between">
-                <label for="li2" class="w-100 d-flex justify-content-between">WOMEN</label>
-                <div class="line w-100"></div>
-                <input type="checkbox" id="li2"  class="unopen-cattegorys1" ng-model="WOMEN" ng-click="filterCategories()"/>
+        <div id="categories-add-color" class="categories-style form-group">
+            <h4 class="categories-title pl-2">CATEGORIES</h4>
+            <ul class="p-2 m-2">
+                <li class="d-flex justify-content-between align-items-center">
+                    <label for="li1"
+                           class="col-4 p-0 m-0 categories-text text-capitalize font-weight-bold">men's</label>
+                    <div class="line col-7"></div>
+                    <input type="checkbox" id="li1" class="col-1 m-1 categories-checkbox" ng-model="MEN"
+                           ng-click="filterCategories()"/>
+                </li>
+                <li class="d-flex justify-content-between align-items-center">
+                    <label for="li2"
+                           class="col-5 p-0 m-0 categories-text text-capitalize font-weight-bold">women's</label>
+                    <div class="line col-6"></div>
+                    <input type="checkbox" id="li2" class="col-1 m-1 categories-checkbox" ng-model="WOMEN"
+                           ng-click="filterCategories()"/>
 
-            </li>
-            <li class="list-group-item justify-content-between">
-                <input type="checkbox" id="li3" class="unopen-cattegorys2" ng-model="KIDS" ng-click="filterCategories()"/>
-                <label for="li3" class="w-100 d-flex justify-content-between">KIDS</label>
-            </li>
-            <li class="list-group-item justify-content-between">
-                <input type="checkbox" id="li4" class="unopen-cattegorys3" ng-model="SPORTS" ng-click="filterCategories()"/>
-                <label for="li4" class="w-100 d-flex justify-content-between">SPORTS</label>
-            </li>
-        </ul>
+                </li>
+                <li class="d-flex justify-content-between align-items-center">
+                    <label for="li3" class="col-3 p-0 m-0 categories-text text-capitalize font-weight-bold">kids</label>
+                    <div class="line col-8"></div>
+                    <input type="checkbox" id="li3" class="col-1 m-1 categories-checkbox" ng-model="KIDS"
+                           ng-click="filterCategories()"/>
 
-        <div class="Rectangle_4b">
+                </li>
+                <li class="d-flex justify-content-between align-items-center ">
+                    <label for="li4"
+                           class="col-4 p-0 m-0 categories-text text-capitalize font-weight-bold">sports</label>
 
-            <div class="form-group">
-                <label class="text-uppercase" for="search-options">search options</label>
-                <select class="form-control" placeholder="Choose.." ng-model="sortShoes" ng-click="clearSortPrice()"
-                        id="search-options">
-                    <option value="+shoePrice">Choose...</option>
-                    <option value="+shoeName">Choose by name</option>
-                    <option value="+shoeBrand">Choose by manufacturer</option>
-                </select>
-            </div>
+                    <div class="line col-7"></div>
+                    <input type="checkbox" id="li4" class="col-1 m-1 categories-checkbox" ng-model="SPORTS"
+                           ng-click="filterCategories()"/>
 
-            <ul id="sort-price-links">
-                <li><span id="LOW_to_HIGH" ng-href="" ng-click='sortByPrice("+shoePrice")'>LOW to HIGH</span></li>
-                <li><span id="HIGH_to_LOW" ng-href="" ng-click='sortByPrice("-shoePrice")'>HIGH to LOW</span></li>
+                </li>
             </ul>
         </div>
+
+
+        <div class="list-group categories-style">
+            <h4 class="categories-title pl-2 text-uppercase">search options</h4>
+            <div class="p-2 m-2 d-flex align-items-center flex-column">
+                <select class="form-control search-options-select border-0 font-weight-bold" placeholder="Choose.."
+                        ng-model="sortShoes" ng-click="clearSortPrice()"
+                        id="search-options">
+                    <option class="font-weight-bold" value="+shoePrice">Choose...</option>
+                    <option class="font-weight-bold" value="+shoeName">Choose by name</option>
+                    <option class="font-weight-bold" value="+shoeBrand">Choose by manufacturer</option>
+                </select>
+
+
+                <ul id="sort-price-links" class="nodecoretion pl-0 mt-5 pt-5">
+                    <li class="d-flex align-items-center flex-column">
+                        <span class="text-nav myriad-font pointer" ng-href="" ng-click='sortByPrice("-shoePrice")'>HIGH to LOW</span>
+                    </li>
+                    <li class="d-flex align-items-center flex-column">
+                        <span class="text-nav myriad-font pointer" ng-href="" ng-click='sortByPrice("+shoePrice")'>LOW to HIGH</span>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
     </aside>
-</div>
 </div>
