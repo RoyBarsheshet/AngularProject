@@ -21,7 +21,7 @@
                     <p class="price font-weight-bold ng-binding align-self-center">${{shoe.shoePrice}}.<span
                             class="cent font-weight-bold">99</span></p>
                     <p class="lead align-self-center">
-                        <a class="btn btn-danger btn-lg text-uppercase font-weight-bold"
+                        <a class="btn btn-danger btn-group-lg  text-uppercase font-weight-bold"
                            href="#!/product/{{shoe.shoeID}}" role="button">Tell me
                             More</a>
                     </p>
@@ -91,10 +91,10 @@
 
                 <ul id="sort-price-links" class="nodecoretion pl-0 mt-5 pt-5">
                     <li class="d-flex align-items-center flex-column">
-                        <span class="text-nav myriad-font pointer" ng-href="" ng-click='sortByPrice("-shoePrice")'>HIGH to LOW</span>
+                        <span class="text-nav myriad-font pointer" ng-click='sortByPrice("-shoePrice")'>HIGH to LOW</span>
                     </li>
                     <li class="d-flex align-items-center flex-column">
-                        <span class="text-nav myriad-font pointer" ng-href="" ng-click='sortByPrice("+shoePrice")'>LOW to HIGH</span>
+                        <span class="text-nav myriad-font pointer" ng-click='sortByPrice("+shoePrice")'>LOW to HIGH</span>
                     </li>
 
                 </ul>

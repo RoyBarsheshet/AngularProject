@@ -1,31 +1,131 @@
-<div ng-controller="productController">
-    <div class="FEATURED_PRODUCTS prod_name"><h3>{{shoe.shoeName}}</h3></div>
-    <div class="Layer_2 layer_2_prod"></div>
-    <p class="home-btn hvr-grow-shadow" style="float: right;margin-right: 150px;">
-        <a class="submit back" href="#!/home">Back to Search</a></p>
-    <div id="Lprod">
+<div ng-controller="productController" class="container my-5">
+    <section>
+        <article>
+            <div class="Proxima-font home-title font-weight-bold text-uppercase">{{shoe.shoeName}}</div>
+            <hr>
+            <div class="d-flex align-items-end flex-column">
+                <a href="#!/home" class="btn btn-danger btn-md text-uppercase font-weight-bold mb-5">
+                    Back to Search
+                </a>
+                </p>
 
-        <div><h4 class="_99_99 prod">${{shoe.shoePrice}}</h4></div>
-        <div class="shoesContainer">
-            <div class="ShoesListUl">
-
-                <div><img class="shoeImag prodImage" ng-src="images/{{shoe.shoeImage}}" alt="{{shoe.shoeImage}}"/></div>
-                </div>
-            <h3 class="Sample_Item_Title name-prod">{{shoe.shoeName}}</h3>
-            <hr class="hrProdc">
-            <div><h3 class="NIKE bre-prod">{{shoe.shoeBrand}}</h3></div>
-            <div><h4 class="catProd">{{shoe.shoeCategory}}</h4></div>
-
-            <p class="pArticle text--p">{{shoe.shoeArticle}}</p>
-                <br>
-            </br>
             </div>
+        </article>
+        <article>
+            <div class="d-flex flex-column align-items-center">
+                <div class="">
+                    <img class="img-thumbnail border-0" ng-src="images/{{shoe.shoeImage}}" alt="{{shoe.shoeImage}}"/>
+                </div>
+                <div class=""><h2 class="font-weight-bold">{{shoe.shoeName}}</h2></div>
+            </div>
+            <hr>
+        </article>
+        <article class="justify-content-center m-lg-5 m-sm-0">
+            <div class="d-flex justify-content-between align-items-center">
+                <h3 class="m-0">{{shoe.shoeBrand}}</h3>
+                <p class="price font-weight-bold home-title m-0">${{shoe.shoePrice}}.<span
+                        class="cent font-weight-bold">99</span></p>
+            </div>
+            <h4 class="">{{shoe.shoeCategory}}</h4>
+
+            <h5 class="m-4">{{shoe.shoeArticle}}</h5>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="customise-link btn-link text-danger text-capitalize text-nav" data-toggle="modal" data-target="#exampleModalLong">
+                please read Terms & Conditions
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+                 aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-capitalize font-weight-bold" id="exampleModalLongTitle">Terms
+                                and Conditions ("Terms")</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body text-capitalize">
+                            Last updated: (30/4/2017) </br>
+
+                            Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before
+                            using the http://www.mywebsite.com (change this) website and the My Mobile App (change this)
+                            mobile application (the "Service") operated by My Company (change this) ("us", "we", or
+                            "our").
+
+                            Your access to and use of the Service is conditioned on your acceptance of and compliance
+                            with these Terms. These Terms apply to all visitors, users and others who access or use the
+                            Service.
+
+                            By accessing or using the Service you agree to be bound by these Terms. If you disagree with
+                            any part of the terms then you may not access the Service.
+
+                            Purchases
+
+                            If you wish to purchase any product or service made available through the Service
+                            ("Purchase"), you may be asked to supply certain information relevant to your Purchase
+                            including, without limitation, your …
+
+                            The Purchases section is for businesses that sell online (physical or digital). For the full
+                            disclosure section, create your own Terms and Conditions.
+
+                            Subscriptions
+
+                            Some parts of the Service are billed on a subscription basis ("Subscription(s)"). You will
+                            be billed in advance on a recurring ...
+
+                            The Subscriptions section is for SaaS businesses. For the full disclosure section, create
+                            your own Terms and Conditions.
+
+                            Content
+
+                            Our Service allows you to post, link, store, share and otherwise make available certain
+                            information, text, graphics, videos, or other material ("Content"). You are responsible for
+                            the …
+
+                            The Content section is for businesses that allow users to create, edit, share, make content
+                            on their websites or apps. For the full disclosure section, create your own Terms and
+                            Conditions.
 
 
+                            Links To Other Web Sites
 
-    </div>
+                            Our Service may contain links to third-party web sites or services that are not owned or
+                            controlled by My Company (change this).
+
+                            My Company (change this) has no control over, and assumes no responsibility for, the
+                            content, privacy policies, or practices of any third party web sites or services. You
+                            further acknowledge and agree that My Company (change this) shall not be responsible or
+                            liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or
+                            in connection with use of or reliance on any such content, goods or services available on or
+                            through any such web sites or services.
+
+                            Changes
+
+                            We reserve the right, at our sole discretion, to modify or replace these Terms at any time.
+                            If a revision is material we will try to provide at least 30 (change this) days' notice
+                            prior to any new terms taking effect. What constitutes a material change will be determined
+                            at our sole discretion.
+
+                            Contact Us
+
+                            If you have any questions about these Terms, please contact us.
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger font-weight-bold " data-dismiss="modal">Close
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+    </section>
 </div>
-
-
 
 

@@ -47,4 +47,15 @@ a:focus {
 color-black {
   color: black; }
 
+.about-text-1 {
+  font-size: 2.6em;
+  line-height: 1.35; }
+
+.TradeGothic-font {
+  font-family: "TradeGothic-BoldCond", "Arial black", "Arial Bold", Arial, sans-serif; }
+
+.customise-link {
+  outline: none;
+  cursor: pointer; }
+
 /*# sourceMappingURL=utilities.css.map */
