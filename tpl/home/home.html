@@ -44,8 +44,8 @@
             <ul class="p-2 m-2">
                 <li class="d-flex justify-content-between align-items-center">
                     <label for="li1"
-                           class="col-4 p-0 m-0 categories-text text-capitalize font-weight-bold">men's</label>
-                    <div class="line col-7"></div>
+                           class="col-4 p-0 m-0 categories-text text-capitalize font-weight-bold change-color-1">men's</label>
+                    <div class="line col-7 change-color-1"></div>
                     <input type="checkbox" id="li1" class="col-1 m-1 categories-checkbox" ng-model="MEN"
                            ng-click="filterCategories()"/>
                 </li>
@@ -91,10 +91,12 @@
 
                 <ul id="sort-price-links" class="nodecoretion pl-0 mt-5 pt-5">
                     <li class="d-flex align-items-center flex-column">
-                        <span class="text-nav myriad-font pointer" ng-click='sortByPrice("-shoePrice")'>HIGH to LOW</span>
+                        <span class="text-nav myriad-font pointer"
+                              ng-click='sortByPrice("-shoePrice")'>HIGH to LOW</span>
                     </li>
                     <li class="d-flex align-items-center flex-column">
-                        <span class="text-nav myriad-font pointer" ng-click='sortByPrice("+shoePrice")'>LOW to HIGH</span>
+                        <span class="text-nav myriad-font pointer"
+                              ng-click='sortByPrice("+shoePrice")'>LOW to HIGH</span>
                     </li>
 
                 </ul>

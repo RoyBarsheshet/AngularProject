@@ -11,4 +11,9 @@ shoeApp.controller("mainController", function ($route, $scope, $location, $rootS
         return ($location.path().substr(0, path.length) === path) ? 'active' : '';
     }
 
+        $('#carouselExampleIndicators').css('display','none');
+        $('#carouselExampleIndicators').slideDown(2300);
+
+
+
 })

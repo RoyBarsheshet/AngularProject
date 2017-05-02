@@ -1,12 +1,15 @@
 .nounderline {
   text-decoration: none
 }
-.nodecoretion{
+
+.nodecoretion {
   list-style-type: none;
 }
+
 .rounded {
   border-radius: 1rem;
 }
+
 .truncate {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -14,52 +17,71 @@
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
 }
-a{
-  color: white;
-  text-decoration: none;
-}
-a:hover{
-  color: white;
-  text-decoration: none;
-}
-a:focus{
+
+a {
   color: white;
   text-decoration: none;
 }
 
-.text-nav
-{
-  font-size: 1.1em;
-
+a:hover {
+  color: white;
+  text-decoration: none;
 }
-.nooutline{
+
+a:focus {
+  color: white;
+  text-decoration: none;
+}
+
+.nooutline {
   outline: none;
 }
+
 .myriad-font {
   font-family: "Myriad Pro", sans-serif;
 }
-.pointer{
+
+.pointer {
   cursor: pointer;
 }
+
 .Proxima-font {
   font-family: "Proxima Nova", sans-serif;
 }
-.home-title{
-  font-size: 2em;
+
+.signature {
+  font-family: Sacramento, cursive;
 }
-color-black{
+
+color-black {
   color: black;
 }
-.about-text-1{
+
+.about-text-1 {
   font-size: 2.6em;
   line-height: 1.35;
 }
-.TradeGothic-font{
-font-family: "TradeGothic-BoldCond", "Arial black", "Arial Bold", Arial, sans-serif;
+
+.TradeGothic-font {
+  font-family: "TradeGothic-BoldCond", "Arial black", "Arial Bold", Arial, sans-serif;
 }
-.customise-link{
+
+.customise-link {
   outline: none;
   cursor: pointer;
+}
+
+.signature-size {
+  font-size: 4em;
+}
+
+.home-title {
+  font-size: 2em;
+}
+
+.text-nav {
+  font-size: 1.1em;
+
 }
 
 //#li1{

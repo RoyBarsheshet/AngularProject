@@ -56,5 +56,6 @@ shoeApp.controller("homeController", function ($rootScope, $scope, $route, $http
         $scope.shoes = (data2.length > 0) ? data2 : shoeCache;
 
     };
-})
+
+    })
 

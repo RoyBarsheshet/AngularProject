@@ -1,14 +1,12 @@
 <div ng-controller="productController" class="container my-5">
     <section>
-        <article>
+        <article class="m-lg-5 m-sm-0">
             <div class="Proxima-font home-title font-weight-bold text-uppercase">{{shoe.shoeName}}</div>
             <hr>
             <div class="d-flex align-items-end flex-column">
-                <a href="#!/home" class="btn btn-danger btn-md text-uppercase font-weight-bold mb-5">
+                <a href="#!/home" class="btn btn-danger btn-md text-uppercase font-weight-bold">
                     Back to Search
                 </a>
-                </p>
-
             </div>
         </article>
         <article>
@@ -18,9 +16,10 @@
                 </div>
                 <div class=""><h2 class="font-weight-bold">{{shoe.shoeName}}</h2></div>
             </div>
-            <hr>
+
         </article>
         <article class="justify-content-center m-lg-5 m-sm-0">
+            <hr>
             <div class="d-flex justify-content-between align-items-center">
                 <h3 class="m-0">{{shoe.shoeBrand}}</h3>
                 <p class="price font-weight-bold home-title m-0">${{shoe.shoePrice}}.<span
@@ -31,7 +30,8 @@
             <h5 class="m-4">{{shoe.shoeArticle}}</h5>
 
             <!-- Button trigger modal -->
-            <button type="button" class="customise-link btn-link text-danger text-capitalize text-nav" data-toggle="modal" data-target="#exampleModalLong">
+            <button type="button" class="customise-link btn-link text-danger text-capitalize text-nav"
+                    data-toggle="modal" data-target="#exampleModalLong">
                 please read Terms & Conditions
             </button>
 

@@ -26,9 +26,6 @@ a:focus {
   color: white;
   text-decoration: none; }
 
-.text-nav {
-  font-size: 1.1em; }
-
 .nooutline {
   outline: none; }
 
@@ -41,8 +38,8 @@ a:focus {
 .Proxima-font {
   font-family: "Proxima Nova", sans-serif; }
 
-.home-title {
-  font-size: 2em; }
+.signature {
+  font-family: Sacramento, cursive; }
 
 color-black {
   color: black; }
@@ -57,5 +54,14 @@ color-black {
 .customise-link {
   outline: none;
   cursor: pointer; }
+
+.signature-size {
+  font-size: 4em; }
+
+.home-title {
+  font-size: 2em; }
+
+.text-nav {
+  font-size: 1.1em; }
 
 /*# sourceMappingURL=utilities.css.map */
