@@ -7,7 +7,9 @@
     <link href="images/favIocn/favicon.ico" rel="icon" type="image/x-icon"/>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-sanitize.min.js"></script>
     <script src="core/js/module.js"></script>
+    <script src="core/js/banner.controller.js"></script>
     <script src="core/js/main.controller.js"></script>
     <script src="tpl/home/home.controller.js"></script>
     <script src="tpl/About/about.controller.js"></script>
@@ -52,7 +54,7 @@
 </header>
 <!-----------------------------------banner------------------------------------------------------->
 <section class="container-fluid">
-    <article class="row">
+    <article class="row" ng-controller="bannerController">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -90,6 +92,7 @@
             </div>
         </div>
     </article>
+
 </section>
 
 <section class="container-fluid">

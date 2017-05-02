@@ -1,5 +1,5 @@
 var shoeCache = null;
-var shoeApp = angular.module("shoeModule", ["ngRoute"])
+var shoeApp = angular.module("shoeModule", ["ngRoute","ngSanitize"])
         .config(function ($routeProvider) {
             $routeProvider
                 .when("/home",
