@@ -47,3 +47,5 @@ nbproject
 composer.lock
 
 #/images/shoes_shop_orig
+*.map
+node_modules/
